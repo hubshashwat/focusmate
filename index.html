@@ -118,6 +118,8 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         camera.position.z = 15;
+        let targetCameraZ = camera.position.z; // track zoom target
+
 
         // --- GLOBE ---
         const GLOBE_RADIUS = 10;
@@ -278,15 +280,45 @@
             }
 
             controls.update();
+            // Smoothly interpolate camera zoom
+// camera.position.z += (targetCameraZ - camera.position.z) * 0.05;
+
             renderer.render(scene, camera);
         }
 
+        function updateTargetCameraDistance() {
+    const aspect = window.innerWidth / window.innerHeight;
+
+    if (window.innerWidth < 768) {
+        // 📱 Phones
+        controls.minDistance = 18;
+        controls.maxDistance = 24;
+        camera.position.z = 21;
+    } else if (aspect < 0.8) {
+        // 🖥️ Vertical monitors
+        controls.minDistance = 18;
+        controls.maxDistance = 22;
+        camera.position.z = 20;
+    } else {
+        // 💻 Normal widescreen
+        controls.minDistance = 12;
+        controls.maxDistance = 18;
+        camera.position.z = 15;
+    }
+}
+
+
+
         // --- EVENT LISTENERS ---
         function onWindowResize() {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        }
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    updateTargetCameraDistance();
+}
+
+
+        
         
         function onMouseMove(event) {
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -321,6 +353,8 @@
 
         window.addEventListener('resize', onWindowResize);
         window.addEventListener('mousemove', onMouseMove);
+        updateTargetCameraDistance();
+
         // --- TOUCH / TAP HANDLING ---
 function onTouchTap(event) {
     const touch = event.touches[0] || event.changedTouches[0];

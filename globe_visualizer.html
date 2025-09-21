@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focusmate Connections: 3D Globe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #00f0ff;
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            padding: 10px 20px;
+            background-color: rgba(0, 25, 35, 0.5);
+            backdrop-filter: blur(5px);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        
+        p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #a0e0ff;
+            font-weight: 300;
+        }
+
+        #globe-canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #tooltip {
+            position: fixed;
+            display: none;
+            background-color: rgba(0, 25, 35, 0.85);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            pointer-events: none;
+            white-space: nowrap;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+            border: 1px solid rgba(0, 240, 255, 0.5);
+            transform: translate(-50%, -130%); /* Position above the cursor */
+            z-index: 100;
+            text-align: center;
+        }
+        #tooltip strong {
+            color: #00f0ff;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+        #tooltip .people-list {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+            font-size: 0.8rem;
+            color: #a0e0ff;
+            max-width: 200px; /* Prevent tooltip from becoming too wide */
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Focusmate Connections</h1>
+        <p>Live Timezone Dashboard</p>
+    </header>
+
+    <canvas id="globe-canvas"></canvas>
+    <div id="tooltip"></div>
+
+    <!-- Load Three.js library from a reliable CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // --- SETUP ---
+        const canvas = document.getElementById('globe-canvas');
+        const tooltip = document.getElementById('tooltip');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        camera.position.z = 15;
+
+        // --- GLOBE ---
+        const GLOBE_RADIUS = 10;
+        const globeGroup = new THREE.Group();
+        scene.add(globeGroup);
+        
+        const coreGeometry = new THREE.SphereGeometry(GLOBE_RADIUS, 64, 64);
+        const coreMaterial = new THREE.MeshBasicMaterial({ color: 0x00050a, transparent: true, opacity: 0.9 });
+        const core = new THREE.Mesh(coreGeometry, coreMaterial);
+        globeGroup.add(core);
+
+        const wireframeGeometry = new THREE.SphereGeometry(GLOBE_RADIUS + 0.05, 32, 32);
+        const wireframeMaterial = new THREE.MeshBasicMaterial({ color: 0x00f0ff, wireframe: true, transparent: true, opacity: 0.15 });
+        const wireframe = new THREE.Mesh(wireframeGeometry, wireframeMaterial);
+        globeGroup.add(wireframe);
+        
+        // --- HELPER FUNCTION ---
+        function latLonToVector3(lat, lon, radius) {
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lon + 180) * (Math.PI / 180);
+            const x = -(radius * Math.sin(phi) * Math.cos(theta));
+            const y = radius * Math.cos(phi);
+            const z = radius * Math.sin(phi) * Math.sin(theta);
+            return new THREE.Vector3(x, y, z);
+        }
+
+        // --- GEODATA: CREATE MAP TEXTURE ---
+        fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json')
+            .then(res => res.json())
+            .then(data => {
+                const canvasWidth = 4096;
+                const canvasHeight = 2048;
+
+                const continents = [
+                    { name: "North America", lat: 45, lon: -100 },
+                    { name: "South America", lat: -15, lon: -60 },
+                    { name: "Africa", lat: 10, lon: 20 },
+                    { name: "Europe", lat: 50, lon: 20 },
+                    { name: "Asia", lat: 45, lon: 100 },
+                    { name: "Australia", lat: -25, lon: 135 },
+                ];
+
+                const mapCanvas = document.createElement('canvas');
+                mapCanvas.width = canvasWidth;
+                mapCanvas.height = canvasHeight;
+                const mapContext = mapCanvas.getContext('2d');
+                
+                mapContext.strokeStyle = 'rgba(0, 240, 255, 0.5)';
+                mapContext.lineWidth = 3;
+                data.features.forEach(country => {
+                    const geometryType = country.geometry.type;
+                    const coordinates = country.geometry.coordinates;
+                    const drawPolygon = (polygonCoords) => {
+                        mapContext.beginPath();
+                        polygonCoords.forEach((ring) => {
+                            ring.forEach((point, pointIndex) => {
+                                const x = (point[0] + 180) * (canvasWidth / 360);
+                                const y = (90 - point[1]) * (canvasHeight / 180);
+                                if (pointIndex === 0) mapContext.moveTo(x, y);
+                                else mapContext.lineTo(x, y);
+                            });
+                        });
+                        mapContext.stroke();
+                    };
+                    if (geometryType === 'Polygon') drawPolygon(coordinates);
+                    else if (geometryType === 'MultiPolygon') coordinates.forEach(polygon => drawPolygon(polygon));
+                });
+
+                mapContext.fillStyle = 'rgba(200, 240, 255, 0.75)';
+                mapContext.font = 'bold 60px "Roboto Mono", monospace';
+                mapContext.textAlign = 'center';
+                mapContext.textBaseline = 'middle';
+
+                continents.forEach(continent => {
+                    const x = (continent.lon + 180) * (canvasWidth / 360);
+                    const y = (90 - continent.lat) * (canvasHeight / 180);
+                    mapContext.fillText(continent.name, x, y);
+                });
+
+
+                const mapGeometry = new THREE.SphereGeometry(GLOBE_RADIUS + 0.01, 64, 64);
+                const mapTexture = new THREE.CanvasTexture(mapCanvas);
+                const mapMaterial = new THREE.MeshBasicMaterial({ map: mapTexture, transparent: true, opacity: 0.7 });
+                const mapSphere = new THREE.Mesh(mapGeometry, mapMaterial);
+                globeGroup.add(mapSphere);
+            });
+
+        // --- LOCATION MARKERS ---
+        const markers = new THREE.Group();
+        globeGroup.add(markers);
+        
+        // NEW: Function to create markers from data
+        function createMarkers(locationsData) {
+             locationsData.forEach(loc => {
+                const position = latLonToVector3(loc.lat, loc.lon, GLOBE_RADIUS);
+                const markerGeometry = new THREE.SphereGeometry(0.1, 16, 16);
+                const markerMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+                const marker = new THREE.Mesh(markerGeometry, markerMaterial);
+                marker.position.copy(position);
+                marker.userData = loc;
+                markers.add(marker);
+            });
+        }
+
+        // NEW: Fetch location data from external JSON file
+        fetch('https://raw.githubusercontent.com/hubshashwat/focusmate/refs/heads/main/location.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(locationsData => {
+                createMarkers(locationsData);
+            })
+            .catch(error => {
+                console.error("Could not load locations data from locations.json:", error);
+                // You could add a fallback or show an error on screen here
+            });
+
+
+        // --- INTERACTIVITY AND CONTROLS ---
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.minDistance = 12;
+        controls.maxDistance = 30;
+        controls.enablePan = false;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.05;
+
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        let hoveredMarker = null;
+
+        // --- ANIMATION LOOP ---
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Animate markers
+            const now = new Date();
+            markers.children.forEach(marker => {
+                const loc = marker.userData;
+                const formatter = new Intl.DateTimeFormat('en-US', { timeZone: loc.tz, hour: '2-digit', hour12: false });
+                const hour = parseInt(formatter.format(now));
+                const isDay = hour >= 6 && hour < 18;
+
+                const dayColor = new THREE.Color('#FFC107');
+                const nightColor = new THREE.Color('#00F0FF');
+                marker.material.color.lerp(isDay ? dayColor : nightColor, 0.1);
+
+                const pulse = 1.0 + 0.2 * Math.sin(Date.now() * 0.005 + marker.position.x);
+                marker.scale.set(pulse, pulse, pulse);
+            });
+
+            if (controls.autoRotate) {
+                 globeGroup.rotation.y += controls.autoRotateSpeed / 100;
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        // --- EVENT LISTENERS ---
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+        
+        function onMouseMove(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(markers.children);
+
+            if (intersects.length > 0) {
+                if (hoveredMarker !== intersects[0].object) {
+                    hoveredMarker = intersects[0].object;
+                    const loc = hoveredMarker.userData;
+                    const formatter = new Intl.DateTimeFormat('en-US', {
+                        timeZone: loc.tz, hour: '2-digit', minute: '2-digit', hour12: true,
+                    });
+                    const timeString = formatter.format(new Date());
+
+                    let tooltipHTML = `<strong>${loc.name}</strong>${timeString}`;
+                    if (loc.people && loc.people.length > 0) {
+                        tooltipHTML += `<div class="people-list">Partners: ${loc.people.join(', ')}</div>`;
+                    }
+                    tooltip.innerHTML = tooltipHTML;
+                }
+                tooltip.style.display = 'block';
+                tooltip.style.left = `${event.clientX}px`;
+                tooltip.style.top = `${event.clientY}px`;
+            } else {
+                hoveredMarker = null;
+                tooltip.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('resize', onWindowResize);
+        window.addEventListener('mousemove', onMouseMove);
+
+        animate();
+    </script>
+</body>
+</html>
+

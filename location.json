@@ -37,14 +37,16 @@
         ]
     },
     {
-        "name": "Toronto",
+        "name": "Montreal",
         "tz": "America/Toronto",
-        "lat": 43.65,
-        "lon": -79.38,
+        "lat": 45.5,
+        "lon": -73.57,
         "people": [
-            "Kaleb - off screen sometimes",
-            "Elizabeth (she/her)",
-            "Victoria F."
+            "Julia-  Happily caffeinated in Canada",
+            "Ashley  P.",
+            "Elizabeth 🇨🇦 R.",
+            "Adina Z.",
+            "Caitlyn  N."
         ]
     },
     {
@@ -66,28 +68,12 @@
         ]
     },
     {
-        "name": "New York",
+        "name": "Boston",
         "tz": "America/New_York",
-        "lat": 40.71,
-        "lon": -74,
+        "lat": 42.36,
+        "lon": -71.05,
         "people": [
-            "Happy  .",
-            "Kinney V.",
-            "Noor  R.",
-            "Lou D.",
-            "Marissa [Remind me to \"practice the pause\"]",
-            "Gail L.",
-            "Gina G.",
-            "Kali  K.",
-            "Amaan C.",
-            "Jessica McCurdy",
-            "Marcy S.",
-            "Claire K. (she/her)",
-            "Stefanie F. 🎙️",
-            "Phoenix Huber 🌱🏳️‍⚧️🐔",
-            "Kelvin  (iscrenshare:H2O@ Start, Pushups@ End)  ",
-            "Jialing L.",
-            "Sarah Y."
+            "June   P."
         ]
     },
     {
@@ -132,18 +118,13 @@
         ]
     },
     {
-        "name": "Los Angeles",
+        "name": "San Francisco",
         "tz": "America/Los_Angeles",
-        "lat": 34.05,
-        "lon": -118.24,
+        "lat": 37.77,
+        "lon": -122.42,
         "people": [
-            "Maame (Talking at the start helps me) A.",
-            "Polina G.",
-            "Sarah P.",
-            "Lee M.",
-            "Monique (Central Washington State, USA)",
-            "Bhavana  Jain",
-            "Moupi M."
+            "Verna💗 mvmt break every 30\" 🚶🏻‍♀️ L.",
+            "Kiran  P."
         ]
     },
     {
@@ -154,19 +135,6 @@
         "people": [
             "Tri N.",
             "Nadja P."
-        ]
-    },
-    {
-        "name": "Montreal",
-        "tz": "America/Toronto",
-        "lat": 45.5,
-        "lon": -73.57,
-        "people": [
-            "Julia-  Happily caffeinated in Canada",
-            "Ashley  P.",
-            "Elizabeth 🇨🇦 R.",
-            "Adina Z.",
-            "Caitlyn  N."
         ]
     },
     {
@@ -218,16 +186,6 @@
         ]
     },
     {
-        "name": "San Francisco",
-        "tz": "America/Los_Angeles",
-        "lat": 37.77,
-        "lon": -122.42,
-        "people": [
-            "Verna💗 mvmt break every 30\" 🚶🏻‍♀️ L.",
-            "Kiran  P."
-        ]
-    },
-    {
         "name": "Vancouver",
         "tz": "America/Vancouver",
         "lat": 49.28,
@@ -261,7 +219,8 @@
         "lat": -26.2,
         "lon": 28.04,
         "people": [
-            "Clem M."
+            "Clem M.",
+            "James D (lmk if 🖥️ is distracting 🙏)"
         ]
     },
     {
@@ -301,15 +260,6 @@
         ]
     },
     {
-        "name": "Boston",
-        "tz": "America/New_York",
-        "lat": 42.36,
-        "lon": -71.05,
-        "people": [
-            "June   P."
-        ]
-    },
-    {
         "name": "Manila",
         "tz": "Asia/Manila",
         "lat": 14.59,
@@ -335,6 +285,33 @@
         "lon": -3.7,
         "people": [
             "Rosa S."
+        ]
+    },
+    {
+        "name": "Paris",
+        "tz": "Europe/Paris",
+        "lat": 48.8588897,
+        "lon": 2.320041,
+        "people": [
+            "Maëlle 🇫."
+        ]
+    },
+    {
+        "name": "Brussels",
+        "tz": "Europe/Brussels",
+        "lat": 50.8465573,
+        "lon": 4.351697,
+        "people": [
+            "Sylvia  ."
+        ]
+    },
+    {
+        "name": "Ho Chi Minh",
+        "tz": "Asia/Ho_Chi_Minh",
+        "lat": 10.7755254,
+        "lon": 106.7021047,
+        "people": [
+            "quỳnhh t."
         ]
     }
 ]

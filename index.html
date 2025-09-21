@@ -321,6 +321,56 @@
 
         window.addEventListener('resize', onWindowResize);
         window.addEventListener('mousemove', onMouseMove);
+        // --- TOUCH / TAP HANDLING ---
+function onTouchTap(event) {
+    const touch = event.touches[0] || event.changedTouches[0];
+    const rect = renderer.domElement.getBoundingClientRect();
+
+    // Convert touch position to normalized device coords
+    mouse.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(markers.children);
+
+    if (intersects.length > 0) {
+        hoveredMarker = intersects[0].object;
+        const loc = hoveredMarker.userData;
+
+        const formatter = new Intl.DateTimeFormat('en-US', {
+            timeZone: loc.tz,
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true,
+        });
+        const timeString = formatter.format(new Date());
+
+        let tooltipHTML = `<strong>${loc.name}</strong>${timeString}`;
+        if (loc.people && loc.people.length > 0) {
+            tooltipHTML += `<div class="people-list">Partners: ${loc.people.join(', ')}</div>`;
+        }
+        tooltip.innerHTML = tooltipHTML;
+
+        tooltip.style.display = 'block';
+        tooltip.style.left = `${touch.clientX}px`;
+        tooltip.style.top = `${touch.clientY}px`;
+    } else {
+        hoveredMarker = null;
+        tooltip.style.display = 'none';
+    }
+}
+
+function onTouchEnd() {
+    // optional: hide tooltip when user lifts finger
+    // comment this out if you want tooltip to stay until next tap
+    tooltip.style.display = 'none';
+}
+
+// Attach touch handlers
+window.addEventListener('touchstart', onTouchTap, { passive: true });
+window.addEventListener('touchmove', onTouchTap, { passive: true });
+window.addEventListener('touchend', onTouchEnd, { passive: true });
+
 
         animate();
     </script>

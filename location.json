@@ -48,10 +48,10 @@
         ]
     },
     {
-        "name": "Eastern",
+        "name": "Montreal",
         "tz": "Canada/Eastern",
-        "lat": 7.7596435,
-        "lon": 81.5850205,
+        "lat": 45.5019,
+        "lon": -73.5674,
         "people": [
             "Adina",
             "Caitlyn",
@@ -71,10 +71,10 @@
         ]
     },
     {
-        "name": "Pacific",
+        "name": "San Francisco",
         "tz": "US/Pacific",
-        "lat": 46.5334929,
-        "lon": -123.768029,
+        "lat": 37.7749,
+        "lon": -122.4194,
         "people": [
             "Kiran",
             "Verna💗"
@@ -243,10 +243,10 @@
         ]
     },
     {
-        "name": "Eastern",
-        "tz": "US/Eastern",
-        "lat": 7.7596435,
-        "lon": 81.5850205,
+        "name": "Boston",
+        "tz": "America/New_York",
+        "lat": 42.36,
+        "lon": -71.05,
         "people": [
             "June"
         ]
@@ -298,10 +298,10 @@
         ]
     },
     {
-        "name": "Athens",
+        "name": "Athens, Greece",
         "tz": "Europe/Athens",
-        "lat": 33.9597677,
-        "lon": -83.376398,
+        "lat": 37.9838,
+        "lon": 23.7275,
         "people": [
             "Anastasios"
         ]

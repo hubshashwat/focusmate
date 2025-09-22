@@ -111,12 +111,14 @@ def main():
             if not user_tz or not user_name:
                 continue  # Skip if essential data is missing
 
+            firstname = user_name.split()[0]
+
             # Scenario 1: The timezone already exists in our data
             if user_tz in locations_map:
                 # Add the person to the list if they're not already there
-                if user_name not in locations_map[user_tz]['people']:
-                    locations_map[user_tz]['people'].append(user_name)
-                    print(f"Added {user_name} to {locations_map[user_tz]['name']}.")
+                if firstname not in locations_map[user_tz]['people']:
+                    locations_map[user_tz]['people'].append(firstname)
+                    print(f"Added {firstname} to {locations_map[user_tz]['name']}.")
 
             # Scenario 2: It's a brand new timezone
             else:
@@ -131,10 +133,10 @@ def main():
                         "tz": user_tz,
                         "lat": lat,
                         "lon": lon,
-                        "people": [user_name]
+                        "people": [firstname]
                     }
                     locations_map[user_tz] = new_location
-                    print(f"Created new location: {city_name} for {user_name}.")
+                    print(f"Created new location: {city_name} for {firstname}.")
 
         except requests.exceptions.RequestException as e:
             print(f"Could not fetch profile for user {user_id}. Error: {e}")

@@ -1,1 +1,364 @@
-[]
+[
+    {
+        "name": "Los Angeles",
+        "tz": "America/Los_Angeles",
+        "lat": 34.0536909,
+        "lon": -118.242766,
+        "people": [
+            "Sarah",
+            "Lee",
+            "Bhavana",
+            "Polina",
+            "Maame",
+            "Monique",
+            "Moupi"
+        ]
+    },
+    {
+        "name": "Ulaanbaatar",
+        "tz": "Asia/Ulaanbaatar",
+        "lat": 47.9184676,
+        "lon": 106.9177016,
+        "people": [
+            "Duuree",
+            "Tuvshinzaya"
+        ]
+    },
+    {
+        "name": "New York",
+        "tz": "America/New_York",
+        "lat": 40.7127281,
+        "lon": -74.0060152,
+        "people": [
+            "Lou",
+            "Noor",
+            "Marcy",
+            "Happy",
+            "Jessica",
+            "Marissa",
+            "Stefanie",
+            "Claire",
+            "Amaan",
+            "Phoenix",
+            "Kelvin",
+            "Kali",
+            "Sarah",
+            "Jialing",
+            "Gina"
+        ]
+    },
+    {
+        "name": "Eastern",
+        "tz": "Canada/Eastern",
+        "lat": 7.7596435,
+        "lon": 81.5850205,
+        "people": [
+            "Adina",
+            "Caitlyn",
+            "Julia-",
+            "Ashley",
+            "Elizabeth"
+        ]
+    },
+    {
+        "name": "Rome",
+        "tz": "Europe/Rome",
+        "lat": 41.8933203,
+        "lon": 12.4829321,
+        "people": [
+            "Pilar",
+            "Thaís"
+        ]
+    },
+    {
+        "name": "Pacific",
+        "tz": "US/Pacific",
+        "lat": 46.5334929,
+        "lon": -123.768029,
+        "people": [
+            "Kiran",
+            "Verna💗"
+        ]
+    },
+    {
+        "name": "Calcutta",
+        "tz": "Asia/Calcutta",
+        "lat": 22.5726459,
+        "lon": 88.3638953,
+        "people": [
+            "Shashwat",
+            "Anusha",
+            "Nambi",
+            "kopal",
+            "Akshita",
+            "AJU",
+            "Edwin",
+            "Meenal",
+            "Riya",
+            "Saumya",
+            "Shraddha",
+            "Ananya",
+            "Srijan",
+            "Yashvi",
+            "Satya",
+            "vishakha"
+        ]
+    },
+    {
+        "name": "Sydney",
+        "tz": "Australia/Sydney",
+        "lat": -33.8698439,
+        "lon": 151.2082848,
+        "people": [
+            "Aimee",
+            "Anjana"
+        ]
+    },
+    {
+        "name": "Chicago",
+        "tz": "America/Chicago",
+        "lat": 41.8755616,
+        "lon": -87.6244212,
+        "people": [
+            "Abi",
+            "Bruno",
+            "Terri-remind",
+            "Bidisha",
+            "Phil",
+            "Mehr"
+        ]
+    },
+    {
+        "name": "Manila",
+        "tz": "Asia/Manila",
+        "lat": 14.5904492,
+        "lon": 120.9803621,
+        "people": [
+            "Chelsea",
+            "Elaine"
+        ]
+    },
+    {
+        "name": "Detroit",
+        "tz": "America/Detroit",
+        "lat": 42.3315509,
+        "lon": -83.0466403,
+        "people": [
+            "Cory"
+        ]
+    },
+    {
+        "name": "Johannesburg",
+        "tz": "Africa/Johannesburg",
+        "lat": -26.205,
+        "lon": 28.049722,
+        "people": [
+            "James",
+            "Clem"
+        ]
+    },
+    {
+        "name": "London",
+        "tz": "Europe/London",
+        "lat": 51.4893335,
+        "lon": -0.1440551,
+        "people": [
+            "Christina",
+            "Nicole",
+            "Liz",
+            "Cook",
+            "Paula",
+            "Miriam",
+            "Babs",
+            "Kasia"
+        ]
+    },
+    {
+        "name": "Berlin",
+        "tz": "Europe/Berlin",
+        "lat": 52.5173885,
+        "lon": 13.3951309,
+        "people": [
+            "Christina",
+            "Sarah",
+            "Sophie",
+            "Lonnie",
+            "Dorothea",
+            "Lena"
+        ]
+    },
+    {
+        "name": "Taipei",
+        "tz": "Asia/Taipei",
+        "lat": 25.0375198,
+        "lon": 121.5636796,
+        "people": [
+            "Hugo"
+        ]
+    },
+    {
+        "name": "Vienna",
+        "tz": "Europe/Vienna",
+        "lat": 48.2083537,
+        "lon": 16.3725042,
+        "people": [
+            "Tobias"
+        ]
+    },
+    {
+        "name": "Luxembourg",
+        "tz": "Europe/Luxembourg",
+        "lat": 49.8158683,
+        "lon": 6.1296751,
+        "people": [
+            "Khizzer"
+        ]
+    },
+    {
+        "name": "Vancouver",
+        "tz": "America/Vancouver",
+        "lat": 49.2608724,
+        "lon": -123.113952,
+        "people": [
+            "Jamie"
+        ]
+    },
+    {
+        "name": "Seoul",
+        "tz": "Asia/Seoul",
+        "lat": 37.5666791,
+        "lon": 126.9782914,
+        "people": [
+            "Irene"
+        ]
+    },
+    {
+        "name": "Toronto",
+        "tz": "America/Toronto",
+        "lat": 43.6534817,
+        "lon": -79.3839347,
+        "people": [
+            "Victoria",
+            "Kaleb"
+        ]
+    },
+    {
+        "name": "Eastern",
+        "tz": "US/Eastern",
+        "lat": 7.7596435,
+        "lon": 81.5850205,
+        "people": [
+            "June"
+        ]
+    },
+    {
+        "name": "Cairo",
+        "tz": "Africa/Cairo",
+        "lat": 30.0443879,
+        "lon": 31.2357257,
+        "people": [
+            "Hashem"
+        ]
+    },
+    {
+        "name": "Moncton",
+        "tz": "America/Moncton",
+        "lat": 46.0985679,
+        "lon": -64.8004265,
+        "people": [
+            "Karen"
+        ]
+    },
+    {
+        "name": "Ho Chi Minh",
+        "tz": "Asia/Ho_Chi_Minh",
+        "lat": 10.7755254,
+        "lon": 106.7021047,
+        "people": [
+            "quỳnhh"
+        ]
+    },
+    {
+        "name": "Hong Kong",
+        "tz": "Asia/Hong_Kong",
+        "lat": 22.350627,
+        "lon": 114.1849161,
+        "people": [
+            "Linoy"
+        ]
+    },
+    {
+        "name": "Colombo",
+        "tz": "Asia/Colombo",
+        "lat": 6.9388614,
+        "lon": 79.8542005,
+        "people": [
+            "Thizahrie",
+            "lily"
+        ]
+    },
+    {
+        "name": "Athens",
+        "tz": "Europe/Athens",
+        "lat": 33.9597677,
+        "lon": -83.376398,
+        "people": [
+            "Anastasios"
+        ]
+    },
+    {
+        "name": "Brussels",
+        "tz": "Europe/Brussels",
+        "lat": 50.8465573,
+        "lon": 4.351697,
+        "people": [
+            "Sylvia"
+        ]
+    },
+    {
+        "name": "Bangkok",
+        "tz": "Asia/Bangkok",
+        "lat": 13.7524938,
+        "lon": 100.4935089,
+        "people": [
+            "Fela"
+        ]
+    },
+    {
+        "name": "Madrid",
+        "tz": "Europe/Madrid",
+        "lat": 40.4167047,
+        "lon": -3.7035825,
+        "people": [
+            "Rosa"
+        ]
+    },
+    {
+        "name": "Oslo",
+        "tz": "Europe/Oslo",
+        "lat": 59.9133301,
+        "lon": 10.7389701,
+        "people": [
+            "Gurinder"
+        ]
+    },
+    {
+        "name": "Prague",
+        "tz": "Europe/Prague",
+        "lat": 50.0874654,
+        "lon": 14.4212535,
+        "people": [
+            "Nadja",
+            "Tri"
+        ]
+    },
+    {
+        "name": "Paris",
+        "tz": "Europe/Paris",
+        "lat": 48.8534951,
+        "lon": 2.3483915,
+        "people": [
+            "Maëlle"
+        ]
+    }
+]

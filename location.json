@@ -25,26 +25,12 @@
         ]
     },
     {
-        "name": "New York",
+        "name": "Boston",
         "tz": "America/New_York",
-        "lat": 40.7127281,
-        "lon": -74.0060152,
+        "lat": 42.36,
+        "lon": -71.05,
         "people": [
-            "Lou",
-            "Noor",
-            "Marcy",
-            "Happy",
-            "Jessica",
-            "Marissa",
-            "Stefanie",
-            "Claire",
-            "Amaan",
-            "Phoenix",
-            "Kelvin",
-            "Kali",
-            "Sarah",
-            "Jialing",
-            "Gina"
+            "June"
         ]
     },
     {
@@ -111,7 +97,8 @@
         "lon": 151.2082848,
         "people": [
             "Aimee",
-            "Anjana"
+            "Anjana",
+            "Natalie"
         ]
     },
     {
@@ -240,15 +227,6 @@
         "people": [
             "Victoria",
             "Kaleb"
-        ]
-    },
-    {
-        "name": "Boston",
-        "tz": "America/New_York",
-        "lat": 42.36,
-        "lon": -71.05,
-        "people": [
-            "June"
         ]
     },
     {

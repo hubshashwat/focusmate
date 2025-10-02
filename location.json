@@ -25,12 +25,27 @@
         ]
     },
     {
-        "name": "Boston",
+        "name": "Boston/New York",
         "tz": "America/New_York",
         "lat": 42.36,
         "lon": -71.05,
         "people": [
-            "June"
+            "Lou",
+            "June",
+            "Noor",
+            "Marcy",
+            "Happy",
+            "Jessica",
+            "Marissa",
+            "Stefanie",
+            "Claire",
+            "Amaan",
+            "Phoenix",
+            "Kelvin",
+            "Kali",
+            "Sarah",
+            "Jialing",
+            "Gina"
         ]
     },
     {

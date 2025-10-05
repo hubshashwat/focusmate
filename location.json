@@ -78,7 +78,8 @@
         "lon": -122.4194,
         "people": [
             "Kiran",
-            "Verna💗"
+            "Verna💗",
+            "Shaneal"
         ]
     },
     {
@@ -102,7 +103,8 @@
             "Srijan",
             "Yashvi",
             "Satya",
-            "vishakha"
+            "vishakha",
+            "Priya"
         ]
     },
     {
@@ -186,7 +188,8 @@
             "Sophie",
             "Lonnie",
             "Dorothea",
-            "Lena"
+            "Lena",
+            "Yasmin"
         ]
     },
     {
@@ -204,7 +207,8 @@
         "lat": 48.2083537,
         "lon": 16.3725042,
         "people": [
-            "Tobias"
+            "Tobias",
+            "Jaunius"
         ]
     },
     {
@@ -323,7 +327,9 @@
         "lat": 40.4167047,
         "lon": -3.7035825,
         "people": [
-            "Rosa"
+            "Rosa",
+            "Alex",
+            "Zee"
         ]
     },
     {
@@ -352,6 +358,24 @@
         "lon": 2.3483915,
         "people": [
             "Maëlle"
+        ]
+    },
+    {
+        "name": "Dubai",
+        "tz": "Asia/Dubai",
+        "lat": 25.0742823,
+        "lon": 55.1885387,
+        "people": [
+            "Tariq"
+        ]
+    },
+    {
+        "name": "Shanghai",
+        "tz": "Asia/Shanghai",
+        "lat": 31.2312707,
+        "lon": 121.4700152,
+        "people": [
+            "moon"
         ]
     }
 ]

@@ -1,5 +1,7 @@
 # 🌐 Focusmate Connections Globe
 
+To see mine click here - https://hubshashwat.github.io/focusmate/
+
 Ever wondered where in the world your Focusmate partners are? 
 This project transforms your session history into a stunning, interactive 3D globe, 
 visualizing the real-time locations of every partner you've worked with over the last year.

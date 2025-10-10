@@ -33,10 +33,11 @@ First, make sure you have Python (>=3.10) installed. Then, open your terminal or
 pip install requests geopy python-dotenv
 ```
 
-### Step 2: Clone the Repo/Clean jsons
+### Step 2: Clone the Repo/Clean jsons/Add Path
 
 Clone this repository to your computer.
-Empty location.json and processed_users.json. 
+Empty location.json and processed_users.json.
+Update your external JSON file 
 
 ### Step 3: Run the Script & Get Your Data
 

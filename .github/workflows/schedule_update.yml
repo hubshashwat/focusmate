@@ -38,14 +38,3 @@ jobs:
           git add location.json
           git add processed_users.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Automated: Update Focusmate locations and user cache" && git push)
-
-      # - name: Commit changes
-      #   run: |
-      #     git config --global user.email "forwardtoshashwat@gmail.com"
-      #     git config --global user.name "Shashwat"
-      #     git add locations.json
-      #     git add processed_users.json
-      #     git commit -m "Update it"
-      #     git push
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

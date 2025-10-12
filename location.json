@@ -11,7 +11,9 @@
             "Polina",
             "Maame",
             "Monique",
-            "Moupi"
+            "Moupi",
+            "Kent",
+            "Sae"
         ]
     },
     {
@@ -45,7 +47,8 @@
             "Kali",
             "Sarah",
             "Jialing",
-            "Gina"
+            "Gina",
+            "Lauren"
         ]
     },
     {
@@ -107,7 +110,8 @@
             "Yashvi",
             "Satya",
             "vishakha",
-            "Priya"
+            "Priya",
+            "Nidharshna"
         ]
     },
     {
@@ -177,7 +181,8 @@
             "Paula",
             "Miriam",
             "Babs",
-            "Kasia"
+            "Kasia",
+            "Karolina"
         ]
     },
     {
@@ -192,7 +197,8 @@
             "Lonnie",
             "Dorothea",
             "Lena",
-            "Yasmin"
+            "Yasmin",
+            "Kati"
         ]
     },
     {
@@ -201,7 +207,8 @@
         "lat": 25.0375198,
         "lon": 121.5636796,
         "people": [
-            "Hugo"
+            "Hugo",
+            "Tom"
         ]
     },
     {
@@ -238,7 +245,8 @@
         "lat": 37.5666791,
         "lon": 126.9782914,
         "people": [
-            "Irene"
+            "Irene",
+            "Alex"
         ]
     },
     {
@@ -360,7 +368,8 @@
         "lat": 48.8534951,
         "lon": 2.3483915,
         "people": [
-            "Maëlle"
+            "Maëlle",
+            "LADELÉE"
         ]
     },
     {
@@ -379,6 +388,15 @@
         "lon": 121.4700152,
         "people": [
             "moon"
+        ]
+    },
+    {
+        "name": "Kolkata",
+        "tz": "Asia/Kolkata",
+        "lat": 22.5726459,
+        "lon": 88.3638953,
+        "people": [
+            "Kabir"
         ]
     }
 ]

@@ -1,6 +1,6 @@
 import requests
 import json
-import os  # <-- Added this import
+import os
 from collections import defaultdict
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
@@ -14,6 +14,11 @@ PROCESSED_USERS_FILE_PATH = 'processed_users.json'
 
 # --- Geocoding Setup ---
 geolocator = Nominatim(user_agent="focusmate_globe_script")
+
+# A map to normalize old timezone names to their modern equivalent
+timezone_aliases = {
+    'Asia/Calcutta': 'Asia/Kolkata'
+}
 
 
 def get_lat_lon(city_name):
@@ -106,6 +111,8 @@ def main():
             user = user_response.json().get('user', {})
 
             user_tz = user.get('timeZone')
+            # Normalize the timezone using the alias map
+            user_tz = timezone_aliases.get(user_tz, user_tz)
             user_name = user.get('name')
 
             if not user_tz or not user_name:

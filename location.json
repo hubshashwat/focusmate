@@ -86,7 +86,7 @@
         ]
     },
     {
-        "name": "Calcutta",
+        "name": "Calcutta (Kolkata)",
         "tz": "Asia/Calcutta",
         "lat": 22.5726459,
         "lon": 88.3638953,
@@ -111,7 +111,8 @@
             "Satya",
             "vishakha",
             "Priya",
-            "Nidharshna"
+            "Nidharshna",
+            "Kabir"
         ]
     },
     {
@@ -388,15 +389,6 @@
         "lon": 121.4700152,
         "people": [
             "moon"
-        ]
-    },
-    {
-        "name": "Kolkata",
-        "tz": "Asia/Kolkata",
-        "lat": 22.5726459,
-        "lon": 88.3638953,
-        "people": [
-            "Kabir"
         ]
     }
 ]

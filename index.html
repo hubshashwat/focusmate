@@ -93,6 +93,14 @@
         @media (max-width: 500px) {
             .github-corner:hover .octo-arm { animation: none; }
             .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+            header {
+        top: 115px;      /* Move header below the ribbon and "Get yours" link */
+        left: 50%;       /* Center the header horizontally */
+        transform: translateX(-50%); /* Fine-tune the centering */
+        width: 90%;      /* Give it a nice width */
+        text-align: center; /* Center the text inside */
+    }
+        
         }
         .get-yours-link {
         position: absolute;
@@ -329,19 +337,19 @@
 
     if (window.innerWidth < 768) {
         // 📱 Phones
-        controls.minDistance = 18;
-        controls.maxDistance = 24;
-        camera.position.z = 21;
+        controls.minDistance = 25;
+        controls.maxDistance = 40;
+        camera.position.z = 30;
     } else if (aspect < 0.8) {
         // 🖥️ Vertical monitors
-        controls.minDistance = 18;
-        controls.maxDistance = 22;
-        camera.position.z = 20;
+        controls.minDistance = 22;
+        controls.maxDistance = 35;
+        camera.position.z = 28;
     } else {
         // 💻 Normal widescreen
-        controls.minDistance = 12;
-        controls.maxDistance = 18;
-        camera.position.z = 15;
+        controls.minDistance = 18;
+        controls.maxDistance = 20;
+        camera.position.z = 10;
     }
 }
 

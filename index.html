@@ -402,6 +402,7 @@
         updateTargetCameraDistance();
 
         // --- TOUCH / TAP HANDLING ---
+// --- TOUCH / TAP HANDLING ---
 function onTouchTap(event) {
     const touch = event.touches[0] || event.changedTouches[0];
     const rect = renderer.domElement.getBoundingClientRect();
@@ -414,6 +415,7 @@ function onTouchTap(event) {
     const intersects = raycaster.intersectObjects(markers.children);
 
     if (intersects.length > 0) {
+        // If we tapped a marker, show its tooltip
         hoveredMarker = intersects[0].object;
         const loc = hoveredMarker.userData;
 
@@ -435,10 +437,12 @@ function onTouchTap(event) {
         tooltip.style.left = `${touch.clientX}px`;
         tooltip.style.top = `${touch.clientY}px`;
     } else {
+        // If we tapped the background, hide the tooltip
         hoveredMarker = null;
         tooltip.style.display = 'none';
     }
 }
+
 
 function onTouchEnd() {
     // optional: hide tooltip when user lifts finger
@@ -446,10 +450,8 @@ function onTouchEnd() {
     tooltip.style.display = 'none';
 }
 
-// Attach touch handlers
+// Attach a single, reliable touch handler
 window.addEventListener('touchstart', onTouchTap, { passive: true });
-window.addEventListener('touchmove', onTouchTap, { passive: true });
-window.addEventListener('touchend', onTouchEnd, { passive: true });
 
 
         animate();

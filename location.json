@@ -99,6 +99,8 @@
         "lat": 22.5726459,
         "lon": 88.3638953,
         "people": [
+            "Rosh",
+            "Rahul",
             "Avinash",
             "Sumeet",
             "Arjun",
@@ -419,16 +421,6 @@
         "lon": -112.074141,
         "people": [
             "Cassandra"
-        ]
-    },
-    {
-        "name": "Kolkata",
-        "tz": "Asia/Kolkata",
-        "lat": 22.5726459,
-        "lon": 88.3638953,
-        "people": [
-            "Rosh",
-            "Rahul"
         ]
     },
     {

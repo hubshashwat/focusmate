@@ -13,7 +13,9 @@
             "Monique",
             "Moupi",
             "Kent",
-            "Sae"
+            "Sae",
+            "Amy",
+            "Stephanie"
         ]
     },
     {
@@ -48,7 +50,13 @@
             "Sarah",
             "Jialing",
             "Gina",
-            "Lauren"
+            "Lauren",
+            "Elena",
+            "Chrissy",
+            "Cassandra",
+            "Shaloma",
+            "Erica",
+            "Eunice"
         ]
     },
     {
@@ -137,7 +145,10 @@
             "Terri-remind",
             "Bidisha",
             "Phil",
-            "Mehr"
+            "Mehr",
+            "Kinga",
+            "Amina",
+            "Tina"
         ]
     },
     {
@@ -147,7 +158,8 @@
         "lon": 120.9803621,
         "people": [
             "Chelsea",
-            "Elaine"
+            "Elaine",
+            "Dessa"
         ]
     },
     {
@@ -183,7 +195,11 @@
             "Miriam",
             "Babs",
             "Kasia",
-            "Karolina"
+            "Karolina",
+            "Nic",
+            "Bogi",
+            "Lali",
+            "☀️Anne-Marie"
         ]
     },
     {
@@ -199,7 +215,8 @@
             "Dorothea",
             "Lena",
             "Yasmin",
-            "Kati"
+            "Kati",
+            "Anna"
         ]
     },
     {
@@ -237,7 +254,8 @@
         "lat": 49.2608724,
         "lon": -123.113952,
         "people": [
-            "Jamie"
+            "Jamie",
+            "Quinn"
         ]
     },
     {
@@ -257,7 +275,8 @@
         "lon": -79.3839347,
         "people": [
             "Victoria",
-            "Kaleb"
+            "Kaleb",
+            "Isa"
         ]
     },
     {
@@ -293,7 +312,8 @@
         "lat": 22.350627,
         "lon": 114.1849161,
         "people": [
-            "Linoy"
+            "Linoy",
+            "Kirby"
         ]
     },
     {
@@ -341,7 +361,8 @@
         "people": [
             "Rosa",
             "Alex",
-            "Zee"
+            "Zee",
+            "Andrea"
         ]
     },
     {
@@ -389,6 +410,34 @@
         "lon": 121.4700152,
         "people": [
             "moon"
+        ]
+    },
+    {
+        "name": "Phoenix",
+        "tz": "America/Phoenix",
+        "lat": 33.4484367,
+        "lon": -112.074141,
+        "people": [
+            "Cassandra"
+        ]
+    },
+    {
+        "name": "Kolkata",
+        "tz": "Asia/Kolkata",
+        "lat": 22.5726459,
+        "lon": 88.3638953,
+        "people": [
+            "Rosh",
+            "Rahul"
+        ]
+    },
+    {
+        "name": "Central",
+        "tz": "US/Central",
+        "lat": 14.6446934,
+        "lon": 121.0504257,
+        "people": [
+            "Nicola"
         ]
     }
 ]

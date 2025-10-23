@@ -150,7 +150,8 @@
             "Mehr",
             "Kinga",
             "Amina",
-            "Tina"
+            "Tina",
+            "Nicola"
         ]
     },
     {
@@ -421,15 +422,6 @@
         "lon": -112.074141,
         "people": [
             "Cassandra"
-        ]
-    },
-    {
-        "name": "Central",
-        "tz": "US/Central",
-        "lat": 14.6446934,
-        "lon": 121.0504257,
-        "people": [
-            "Nicola"
         ]
     }
 ]

@@ -17,7 +17,8 @@ geolocator = Nominatim(user_agent="focusmate_globe_script")
 
 # A map to normalize old timezone names to their modern equivalent
 timezone_aliases = {
-    'Asia/Kolkata': 'Asia/Calcutta'
+    'Asia/Kolkata': 'Asia/Calcutta',
+    'US/Central': 'America/Chicago'
 }
 
 

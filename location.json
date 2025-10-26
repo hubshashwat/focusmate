@@ -15,7 +15,8 @@
             "Kent",
             "Sae",
             "Amy",
-            "Stephanie"
+            "Stephanie",
+            "Lisa"
         ]
     },
     {
@@ -56,7 +57,9 @@
             "Cassandra",
             "Shaloma",
             "Erica",
-            "Eunice"
+            "Eunice",
+            "Dawn",
+            "Mandy"
         ]
     },
     {
@@ -122,7 +125,8 @@
             "vishakha",
             "Priya",
             "Nidharshna",
-            "Kabir"
+            "Kabir",
+            "Shreya"
         ]
     },
     {
@@ -202,7 +206,10 @@
             "Nic",
             "Bogi",
             "Lali",
-            "☀️Anne-Marie"
+            "☀️Anne-Marie",
+            "Laurie",
+            "April",
+            "Larissa"
         ]
     },
     {
@@ -219,7 +226,10 @@
             "Lena",
             "Yasmin",
             "Kati",
-            "Anna"
+            "Anna",
+            "Justus",
+            "Hanna",
+            "Danielle"
         ]
     },
     {
@@ -422,6 +432,53 @@
         "lon": -112.074141,
         "people": [
             "Cassandra"
+        ]
+    },
+    {
+        "name": "Denver",
+        "tz": "America/Denver",
+        "lat": 39.7392364,
+        "lon": -104.984862,
+        "people": [
+            "Cate",
+            "Kim",
+            "Larissa"
+        ]
+    },
+    {
+        "name": "Amsterdam",
+        "tz": "Europe/Amsterdam",
+        "lat": 52.3730796,
+        "lon": 4.8924534,
+        "people": [
+            "Ellie"
+        ]
+    },
+    {
+        "name": "Nairobi",
+        "tz": "Africa/Nairobi",
+        "lat": -1.2890006,
+        "lon": 36.8172812,
+        "people": [
+            "sally"
+        ]
+    },
+    {
+        "name": "Auckland",
+        "tz": "Pacific/Auckland",
+        "lat": -36.852095,
+        "lon": 174.7631803,
+        "people": [
+            "Olivia"
+        ]
+    },
+    {
+        "name": "Stockholm",
+        "tz": "Europe/Stockholm",
+        "lat": 59.3251172,
+        "lon": 18.0710935,
+        "people": [
+            "Olof"
         ]
     }
 ]

@@ -16,7 +16,11 @@
             "Sae",
             "Amy",
             "Stephanie",
-            "Lisa"
+            "Lisa",
+            "Scarlett",
+            "Raquel",
+            "Jessie",
+            "Elle"
         ]
     },
     {
@@ -126,7 +130,8 @@
             "Priya",
             "Nidharshna",
             "Kabir",
-            "Shreya"
+            "Shreya",
+            "Pooja"
         ]
     },
     {
@@ -209,7 +214,10 @@
             "☀️Anne-Marie",
             "Laurie",
             "April",
-            "Larissa"
+            "Larissa",
+            "Lucy",
+            "Holly",
+            "Heidi"
         ]
     },
     {
@@ -375,7 +383,8 @@
             "Rosa",
             "Alex",
             "Zee",
-            "Andrea"
+            "Andrea",
+            "Maria-Jose"
         ]
     },
     {
@@ -479,6 +488,24 @@
         "lon": 18.0710935,
         "people": [
             "Olof"
+        ]
+    },
+    {
+        "name": "Moscow",
+        "tz": "Europe/Moscow",
+        "lat": 55.625578,
+        "lon": 37.6063916,
+        "people": [
+            "Vladislav"
+        ]
+    },
+    {
+        "name": "Dublin",
+        "tz": "Europe/Dublin",
+        "lat": 53.3493795,
+        "lon": -6.2605593,
+        "people": [
+            "Liana"
         ]
     }
 ]

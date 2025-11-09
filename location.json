@@ -20,7 +20,9 @@
             "Scarlett",
             "Raquel",
             "Jessie",
-            "Elle"
+            "Elle",
+            "Ebaad",
+            "Alexis"
         ]
     },
     {
@@ -63,7 +65,8 @@
             "Erica",
             "Eunice",
             "Dawn",
-            "Mandy"
+            "Mandy",
+            "Kevin"
         ]
     },
     {
@@ -131,7 +134,9 @@
             "Nidharshna",
             "Kabir",
             "Shreya",
-            "Pooja"
+            "Pooja",
+            "Himal",
+            "Vaishu"
         ]
     },
     {
@@ -171,7 +176,8 @@
         "people": [
             "Chelsea",
             "Elaine",
-            "Dessa"
+            "Dessa",
+            "Femy"
         ]
     },
     {
@@ -217,7 +223,8 @@
             "Larissa",
             "Lucy",
             "Holly",
-            "Heidi"
+            "Heidi",
+            "Rachel"
         ]
     },
     {
@@ -237,7 +244,8 @@
             "Anna",
             "Justus",
             "Hanna",
-            "Danielle"
+            "Danielle",
+            "Cendrine"
         ]
     },
     {
@@ -334,7 +342,8 @@
         "lon": 114.1849161,
         "people": [
             "Linoy",
-            "Kirby"
+            "Kirby",
+            "Julie"
         ]
     },
     {
@@ -505,7 +514,46 @@
         "lat": 53.3493795,
         "lon": -6.2605593,
         "people": [
-            "Liana"
+            "Liana",
+            "Esra",
+            "keelin"
+        ]
+    },
+    {
+        "name": "Sao Paulo",
+        "tz": "America/Sao_Paulo",
+        "lat": -23.5506507,
+        "lon": -46.6333824,
+        "people": [
+            "Aline",
+            "Mike"
+        ]
+    },
+    {
+        "name": "Dhaka",
+        "tz": "Asia/Dhaka",
+        "lat": 23.7643863,
+        "lon": 90.3890144,
+        "people": [
+            "Salman"
+        ]
+    },
+    {
+        "name": "Casablanca",
+        "tz": "Africa/Casablanca",
+        "lat": 33.5945144,
+        "lon": -7.6200284,
+        "people": [
+            "Khulud🍉"
+        ]
+    },
+    {
+        "name": "Jerusalem",
+        "tz": "Asia/Jerusalem",
+        "lat": 31.7788472,
+        "lon": 35.2257856,
+        "people": [
+            "Dekel"
         ]
     }
 ]

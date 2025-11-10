@@ -1,7 +1,6 @@
 import requests
 import json
 import os
-from collections import defaultdict
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
@@ -81,7 +80,14 @@ def main():
     try:
         response = requests.get('https://api.focusmate.com/v1/sessions', params=params, headers=headers)
         response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
-        sessions = response.json().get('sessions', [])
+
+        # --- ADD THESE 3 LINES ---
+        print("Saving raw session data to focusmate_data.json...")
+        raw_data = response.json()
+        save_data('focusmate_data.json', raw_data)
+        # -------------------------
+
+        sessions = raw_data.get('sessions', [])
     except requests.exceptions.RequestException as e:
         print(f"Error fetching sessions: {e}")
         return

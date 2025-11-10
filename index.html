@@ -239,10 +239,12 @@
             text-shadow: 0 0 5px #00f0ff;
         }
 
+
         /* --- Mobile Tweaks --- */
         @media (max-width: 500px) {
             .github-corner:hover .octo-arm { animation: none; }
             .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+            
             header {
                 top: 115px;      /* Move header below the ribbon */
                 left: 50%;       /* Center the header horizontally */
@@ -250,14 +252,31 @@
                 width: 90%;      /* Give it a nice width */
                 text-align: center; /* Center the text inside */
             }
+
+            /* --- THIS IS THE MAIN FIX --- */
+            /* * On mobile, the header is fixed. We need to push the *content*
+             * of the active view down so it doesn't appear under the header.
+             * 230px should be enough (115px for ribbon + header height)
+            */
+            .view-container.active {
+                padding-top: 230px; 
+                box-sizing: border-box; /* Makes height (100vh) include padding */
+            }
+            /* --------------------------- */
+
+            /* Tweak stats panel to use the container's padding */
             #stats-panel {
-                top: auto; /* Remove old fixed behavior */
-                margin-top: 180px; /* Add margin to clear header */
+                top: auto;
+                margin-top: 0; /* Container now provides the top padding */
                 margin-bottom: 40px;
                 width: 90%;
-                box-sizing: border-box; /* Include padding in width */
+                box-sizing: border-box;
             }
 
+            /* Make the stats view align its content to the top */
+            #stats-view.active {
+                align-items: flex-start; 
+            }
         }
     </style>
 </head>

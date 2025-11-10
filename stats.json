@@ -1,0 +1,33 @@
+{
+    "hoursFocused": 109.17,
+    "uniquePartners": 199,
+    "sessionsWithFavorites": 33,
+    "sessionDurations": [
+        {
+            "duration": "25 min",
+            "count": 178
+        },
+        {
+            "duration": "50 min",
+            "count": 40
+        },
+        {
+            "duration": "75 min",
+            "count": 2
+        }
+    ],
+    "activityTypes": [
+        {
+            "type": "Desk",
+            "count": 210
+        },
+        {
+            "type": "Anything",
+            "count": 4
+        },
+        {
+            "type": "Moving",
+            "count": 6
+        }
+    ]
+}

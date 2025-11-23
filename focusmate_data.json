@@ -1,6 +1,462 @@
 {
     "sessions": [
         {
+            "sessionId": "b85a2c14-2e96-4968-a8be-c039f679a104",
+            "duration": 3000000,
+            "startTime": "2025-11-22T12:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:18:23.806561+00:00",
+                    "joinedAt": "2025-11-22T12:29:13.051968+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "9bec78b2-5199-43bb-9b6f-06366ae698c3",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "ae81d345-233a-4f91-a75d-4c958e5597d8",
+            "duration": 3000000,
+            "startTime": "2025-11-22T11:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-22T06:24:45.247707+00:00",
+                    "joinedAt": "2025-11-22T11:29:07.171102+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "9bec78b2-5199-43bb-9b6f-06366ae698c3",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "1e124b86-1df7-42d3-913d-115bafa9c0dc",
+            "duration": 3000000,
+            "startTime": "2025-11-22T10:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-22T09:08:02.212423+00:00",
+                    "joinedAt": "2025-11-22T09:59:08.613587+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "9bec78b2-5199-43bb-9b6f-06366ae698c3",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "1a726908-021c-4f8c-bcdd-766847406b8e",
+            "duration": 3000000,
+            "startTime": "2025-11-22T08:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:14:09.927826+00:00",
+                    "joinedAt": "2025-11-22T08:29:28.378321+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "abcc6fbe-7062-4347-b063-5fe92db247b7",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "9a0866ba-38de-483a-84b6-6512cc3403ab",
+            "duration": 1500000,
+            "startTime": "2025-11-22T08:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-22T07:37:42.894495+00:00",
+                    "joinedAt": "2025-11-22T07:59:35.684422+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "2d69f8a8-69d5-466b-8db9-c6ae5392c5f5",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "112138c6-e07f-4181-ba62-49b74b213712",
+            "duration": 1500000,
+            "startTime": "2025-11-20T19:15:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-20T18:28:57.037499+00:00",
+                    "joinedAt": "2025-11-20T19:14:27.363116+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "a8134079-01a2-4b21-9e60-8c3ca6e5ac23",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "a220d18b-905e-4c4c-ace7-b9ad45a61c25",
+            "duration": 1500000,
+            "startTime": "2025-11-20T18:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-20T18:28:54.679744+00:00",
+                    "joinedAt": "2025-11-20T18:44:37.892056+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "7cf3dde2-bf8b-4b63-ac20-0ad70100c2fe",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "3bda5dd2-a10e-47c1-a3a9-15c344a26b4a",
+            "duration": 3000000,
+            "startTime": "2025-11-20T17:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-20T17:46:13.392769+00:00",
+                    "joinedAt": "2025-11-20T17:46:26.257458+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "6c8cad0c-2f07-46fe-a875-f2d627dc2a47",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "23961b6c-8fdc-4486-a21d-5e8efe4958c2",
+            "duration": 3000000,
+            "startTime": "2025-11-20T02:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-20T01:56:17.266685+00:00",
+                    "joinedAt": "2025-11-20T01:59:12.364959+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "e585f856-a37e-492c-8deb-30a754e45f1a",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "186dd182-de64-4a55-9451-6fe6618ed621",
+            "duration": 1500000,
+            "startTime": "2025-11-19T16:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:24:32.943854+00:00",
+                    "joinedAt": "2025-11-19T16:44:15.905840+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "9bec78b2-5199-43bb-9b6f-06366ae698c3",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "969c204b-a2ad-4aac-b409-b565de1c17ba",
+            "duration": 1500000,
+            "startTime": "2025-11-19T16:15:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:24:28.281225+00:00",
+                    "joinedAt": "2025-11-19T16:14:12.896895+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "9bec78b2-5199-43bb-9b6f-06366ae698c3",
+                    "isFavorite": true
+                }
+            ]
+        },
+        {
+            "sessionId": "bea32f26-00ed-4b2c-9661-a744c2cdfbb6",
+            "duration": 1500000,
+            "startTime": "2025-11-19T15:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:32:02.632583+00:00",
+                    "joinedAt": "2025-11-19T15:32:04.396485+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "04c97865-0c21-4254-9df2-36c7738415e7",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "0f8c433a-93ad-4a99-b3ae-4c5fa58c83e8",
+            "duration": 1500000,
+            "startTime": "2025-11-19T15:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T15:23:51.437323+00:00",
+                    "joinedAt": "2025-11-19T15:29:35.119334+00:00",
+                    "completed": false,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                }
+            ]
+        },
+        {
+            "sessionId": "9ccf1eee-0163-48a7-b113-2f6edf352b59",
+            "duration": 1500000,
+            "startTime": "2025-11-19T15:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-19T13:22:10.311823+00:00",
+                    "joinedAt": "2025-11-19T14:59:34.923710+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "4cdbf751-93c1-41f3-821c-77e4c42aab2f",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "2b529f7e-aee3-4ad9-b666-64053d68bd33",
+            "duration": 3000000,
+            "startTime": "2025-11-17T12:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-17T12:32:39.317122+00:00",
+                    "joinedAt": "2025-11-17T12:44:59.162454+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "431a4fef-09f9-4837-a7b6-aca1bb4cd9ad",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "8b499652-2fe4-4b45-969f-7a649ef70151",
+            "duration": 1500000,
+            "startTime": "2025-11-16T17:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-16T14:31:28.663088+00:00",
+                    "joinedAt": "2025-11-16T17:30:17.797597+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "f1e22ee3-94a9-4da3-8d11-5bfca006bf59",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "52b6c37f-8359-456e-93ac-13a4aa91a2ac",
+            "duration": 1500000,
+            "startTime": "2025-11-16T17:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-16T16:24:41.860989+00:00",
+                    "joinedAt": "2025-11-16T16:59:05.805657+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "d354806b-8fab-414d-b96c-4a4503a7eb60",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "91ff6a20-a157-45d0-bdd5-74de0ef92135",
+            "duration": 1500000,
+            "startTime": "2025-11-16T16:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-16T16:24:40.305218+00:00",
+                    "joinedAt": "2025-11-16T16:29:25.978310+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "65aa2ad5-20ad-4905-b741-ac3c35ec428a",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "19d65c16-b094-4704-b059-c355c171b133",
+            "duration": 3000000,
+            "startTime": "2025-11-16T11:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-16T09:22:32.502919+00:00",
+                    "joinedAt": "2025-11-16T11:29:47.099957+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "389af726-2b62-4aa8-b2b2-06bf770bc600",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "0a9f0479-f764-4f1a-8b6d-311749429831",
+            "duration": 3000000,
+            "startTime": "2025-11-16T10:30:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-16T09:31:39.090989+00:00",
+                    "joinedAt": "2025-11-16T10:30:07.613261+00:00",
+                    "completed": true,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
+                },
+                {
+                    "userId": "f1e22ee3-94a9-4da3-8d11-5bfca006bf59",
+                    "isFavorite": false
+                }
+            ]
+        },
+        {
             "sessionId": "d25af921-c75e-48ff-9dcc-47ae7f97c23c",
             "duration": 1500000,
             "startTime": "2025-11-15T06:30:00+00:00",
@@ -549,6 +1005,25 @@
             ]
         },
         {
+            "sessionId": "f4ab687d-1d64-4d44-89f2-61838149f0b4",
+            "duration": 1500000,
+            "startTime": "2025-11-04T07:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-11-04T07:44:42.153019+00:00",
+                    "joinedAt": "2025-11-04T07:45:06.983807+00:00",
+                    "completed": false,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                }
+            ]
+        },
+        {
             "sessionId": "d2c86571-e262-40ad-b39c-3da2b618161e",
             "duration": 1500000,
             "startTime": "2025-11-04T07:45:00+00:00",
@@ -568,25 +1043,6 @@
                 {
                     "userId": "960c31a8-ef71-482d-989c-20d342d38e90",
                     "isFavorite": false
-                }
-            ]
-        },
-        {
-            "sessionId": "f4ab687d-1d64-4d44-89f2-61838149f0b4",
-            "duration": 1500000,
-            "startTime": "2025-11-04T07:45:00+00:00",
-            "users": [
-                {
-                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-11-04T07:44:42.153019+00:00",
-                    "joinedAt": "2025-11-04T07:45:06.983807+00:00",
-                    "completed": false,
-                    "sessionTitle": "",
-                    "activityType": "desk",
-                    "preferences": {
-                        "preferFavorites": "preferred",
-                        "quietMode": false
-                    }
                 }
             ]
         },
@@ -1265,25 +1721,6 @@
             ]
         },
         {
-            "sessionId": "36a75e31-337d-44a5-9ebf-71066ecda0e6",
-            "duration": 3000000,
-            "startTime": "2025-10-24T13:15:00+00:00",
-            "users": [
-                {
-                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-10-24T13:16:19.636422+00:00",
-                    "joinedAt": "2025-10-24T13:16:20.541323+00:00",
-                    "completed": false,
-                    "sessionTitle": null,
-                    "activityType": "desk",
-                    "preferences": {
-                        "preferFavorites": "preferred",
-                        "quietMode": false
-                    }
-                }
-            ]
-        },
-        {
             "sessionId": "d4634b84-9524-4207-8135-ec034f6c1ac9",
             "duration": 1500000,
             "startTime": "2025-10-24T13:15:00+00:00",
@@ -1303,6 +1740,25 @@
                 {
                     "userId": "d354806b-8fab-414d-b96c-4a4503a7eb60",
                     "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "36a75e31-337d-44a5-9ebf-71066ecda0e6",
+            "duration": 3000000,
+            "startTime": "2025-10-24T13:15:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-10-24T13:16:19.636422+00:00",
+                    "joinedAt": "2025-10-24T13:16:20.541323+00:00",
+                    "completed": false,
+                    "sessionTitle": null,
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
                 }
             ]
         },
@@ -2598,14 +3054,14 @@
             ]
         },
         {
-            "sessionId": "511e78c6-9aac-4f81-89dd-4de8daec08f1",
+            "sessionId": "b2b6ba1c-2e17-4780-8851-36282c5753ce",
             "duration": 1500000,
             "startTime": "2025-10-10T07:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-10-10T06:58:33.739339+00:00",
-                    "joinedAt": "2025-10-10T07:00:04.519679+00:00",
+                    "requestedAt": "2025-10-10T07:01:29.458122+00:00",
+                    "joinedAt": "2025-10-10T07:01:31.204480+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -2617,14 +3073,14 @@
             ]
         },
         {
-            "sessionId": "b2b6ba1c-2e17-4780-8851-36282c5753ce",
+            "sessionId": "511e78c6-9aac-4f81-89dd-4de8daec08f1",
             "duration": 1500000,
             "startTime": "2025-10-10T07:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-10-10T07:01:29.458122+00:00",
-                    "joinedAt": "2025-10-10T07:01:31.204480+00:00",
+                    "requestedAt": "2025-10-10T06:58:33.739339+00:00",
+                    "joinedAt": "2025-10-10T07:00:04.519679+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -2908,25 +3364,6 @@
             ]
         },
         {
-            "sessionId": "59aa8609-c6ce-4a84-b974-3a1c6eee52a4",
-            "duration": 1500000,
-            "startTime": "2025-10-04T06:45:00+00:00",
-            "users": [
-                {
-                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-10-04T06:06:39.466962+00:00",
-                    "joinedAt": "2025-10-04T06:44:18.723851+00:00",
-                    "completed": false,
-                    "sessionTitle": "",
-                    "activityType": "desk",
-                    "preferences": {
-                        "preferFavorites": "preferred",
-                        "quietMode": false
-                    }
-                }
-            ]
-        },
-        {
             "sessionId": "bef0ccbf-4374-4756-bc10-057b05857e5c",
             "duration": 1500000,
             "startTime": "2025-10-04T06:45:00+00:00",
@@ -2946,6 +3383,25 @@
                 {
                     "userId": "4b1155fa-a47e-4779-ac0b-3ee8d3bc31a2",
                     "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "59aa8609-c6ce-4a84-b974-3a1c6eee52a4",
+            "duration": 1500000,
+            "startTime": "2025-10-04T06:45:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-10-04T06:06:39.466962+00:00",
+                    "joinedAt": "2025-10-04T06:44:18.723851+00:00",
+                    "completed": false,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
                 }
             ]
         },
@@ -3406,14 +3862,14 @@
             ]
         },
         {
-            "sessionId": "f89122f7-db97-4841-8399-6b429b04ddf0",
-            "duration": 3000000,
+            "sessionId": "60b65fae-38b4-455c-a3e4-b387b381c99c",
+            "duration": 1500000,
             "startTime": "2025-09-12T05:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-09-12T05:01:08.844673+00:00",
-                    "joinedAt": "2025-09-12T05:01:11.995530+00:00",
+                    "requestedAt": "2025-09-12T05:01:54.194526+00:00",
+                    "joinedAt": "2025-09-12T05:01:55.939819+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -3444,14 +3900,14 @@
             ]
         },
         {
-            "sessionId": "60b65fae-38b4-455c-a3e4-b387b381c99c",
-            "duration": 1500000,
+            "sessionId": "f89122f7-db97-4841-8399-6b429b04ddf0",
+            "duration": 3000000,
             "startTime": "2025-09-12T05:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-09-12T05:01:54.194526+00:00",
-                    "joinedAt": "2025-09-12T05:01:55.939819+00:00",
+                    "requestedAt": "2025-09-12T05:01:08.844673+00:00",
+                    "joinedAt": "2025-09-12T05:01:11.995530+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -3980,25 +4436,6 @@
             ]
         },
         {
-            "sessionId": "70f69c4f-244f-4561-a0bd-cc67386f85a9",
-            "duration": 3000000,
-            "startTime": "2025-08-23T08:15:00+00:00",
-            "users": [
-                {
-                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-08-23T08:06:04.584401+00:00",
-                    "joinedAt": "2025-08-23T08:06:05.469572+00:00",
-                    "completed": false,
-                    "sessionTitle": null,
-                    "activityType": "desk",
-                    "preferences": {
-                        "preferFavorites": "noPreference",
-                        "quietMode": false
-                    }
-                }
-            ]
-        },
-        {
             "sessionId": "13962b7e-4006-44f8-b52a-a410cbc6eccb",
             "duration": 1500000,
             "startTime": "2025-08-23T08:15:00+00:00",
@@ -4018,6 +4455,25 @@
                 {
                     "userId": "cad2975c-2b43-4d5d-ab38-4cfc0951668e",
                     "isFavorite": false
+                }
+            ]
+        },
+        {
+            "sessionId": "70f69c4f-244f-4561-a0bd-cc67386f85a9",
+            "duration": 3000000,
+            "startTime": "2025-08-23T08:15:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-08-23T08:06:04.584401+00:00",
+                    "joinedAt": "2025-08-23T08:06:05.469572+00:00",
+                    "completed": false,
+                    "sessionTitle": null,
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
+                        "quietMode": false
+                    }
                 }
             ]
         },
@@ -4106,25 +4562,6 @@
             ]
         },
         {
-            "sessionId": "9f0fefb1-f28f-4d4f-9db8-bd7f0a1a6c97",
-            "duration": 1500000,
-            "startTime": "2025-08-09T15:00:00+00:00",
-            "users": [
-                {
-                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-08-09T15:03:18.950457+00:00",
-                    "joinedAt": "2025-08-09T15:03:21.956460+00:00",
-                    "completed": false,
-                    "sessionTitle": "",
-                    "activityType": "desk",
-                    "preferences": {
-                        "preferFavorites": "noPreference",
-                        "quietMode": false
-                    }
-                }
-            ]
-        },
-        {
             "sessionId": "beb0cacb-908d-43dd-bd22-ae12bae0568d",
             "duration": 1500000,
             "startTime": "2025-08-09T15:00:00+00:00",
@@ -4138,6 +4575,25 @@
                     "activityType": "anything",
                     "preferences": {
                         "preferFavorites": "preferred",
+                        "quietMode": false
+                    }
+                }
+            ]
+        },
+        {
+            "sessionId": "9f0fefb1-f28f-4d4f-9db8-bd7f0a1a6c97",
+            "duration": 1500000,
+            "startTime": "2025-08-09T15:00:00+00:00",
+            "users": [
+                {
+                    "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
+                    "requestedAt": "2025-08-09T15:03:18.950457+00:00",
+                    "joinedAt": "2025-08-09T15:03:21.956460+00:00",
+                    "completed": false,
+                    "sessionTitle": "",
+                    "activityType": "desk",
+                    "preferences": {
+                        "preferFavorites": "noPreference",
                         "quietMode": false
                     }
                 }
@@ -4412,14 +4868,14 @@
             ]
         },
         {
-            "sessionId": "612d8164-0265-4a19-add6-cd2c204c5a00",
+            "sessionId": "78810294-51eb-490f-a19b-cac31f790e65",
             "duration": 1500000,
             "startTime": "2025-07-27T15:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-27T15:02:57.862396+00:00",
-                    "joinedAt": "2025-07-27T15:03:00.004178+00:00",
+                    "requestedAt": "2025-07-27T12:57:56.415511+00:00",
+                    "joinedAt": "2025-07-27T14:58:42.780714+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -4431,14 +4887,14 @@
             ]
         },
         {
-            "sessionId": "78810294-51eb-490f-a19b-cac31f790e65",
+            "sessionId": "612d8164-0265-4a19-add6-cd2c204c5a00",
             "duration": 1500000,
             "startTime": "2025-07-27T15:00:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-27T12:57:56.415511+00:00",
-                    "joinedAt": "2025-07-27T14:58:42.780714+00:00",
+                    "requestedAt": "2025-07-27T15:02:57.862396+00:00",
+                    "joinedAt": "2025-07-27T15:03:00.004178+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -4691,14 +5147,14 @@
             ]
         },
         {
-            "sessionId": "e5986b0d-6395-487c-9675-fbe23034c054",
+            "sessionId": "7c81dc57-5354-40ba-9304-f53321e7c2e2",
             "duration": 3000000,
             "startTime": "2025-07-24T03:15:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-24T03:16:17.813851+00:00",
-                    "joinedAt": "2025-07-24T03:16:19.756006+00:00",
+                    "requestedAt": "2025-07-24T03:15:53.433769+00:00",
+                    "joinedAt": "2025-07-24T03:15:55.798483+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -4710,14 +5166,14 @@
             ]
         },
         {
-            "sessionId": "7c81dc57-5354-40ba-9304-f53321e7c2e2",
+            "sessionId": "e5986b0d-6395-487c-9675-fbe23034c054",
             "duration": 3000000,
             "startTime": "2025-07-24T03:15:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-24T03:15:53.433769+00:00",
-                    "joinedAt": "2025-07-24T03:15:55.798483+00:00",
+                    "requestedAt": "2025-07-24T03:16:17.813851+00:00",
+                    "joinedAt": "2025-07-24T03:16:19.756006+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -5208,14 +5664,14 @@
             ]
         },
         {
-            "sessionId": "46ace4b2-d8b0-4b12-baa7-910ffa307b87",
+            "sessionId": "2e2b0ea2-168b-484e-8d6a-0d7e6f5a5b72",
             "duration": 1500000,
             "startTime": "2025-07-17T19:45:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-17T19:46:31.115814+00:00",
-                    "joinedAt": "2025-07-17T19:46:33.468991+00:00",
+                    "requestedAt": "2025-07-17T19:46:59.585158+00:00",
+                    "joinedAt": "2025-07-17T19:47:03.130115+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",
@@ -5227,14 +5683,14 @@
             ]
         },
         {
-            "sessionId": "2e2b0ea2-168b-484e-8d6a-0d7e6f5a5b72",
+            "sessionId": "46ace4b2-d8b0-4b12-baa7-910ffa307b87",
             "duration": 1500000,
             "startTime": "2025-07-17T19:45:00+00:00",
             "users": [
                 {
                     "userId": "63d819b5-d69c-46aa-90e7-7a20fb2cfe29",
-                    "requestedAt": "2025-07-17T19:46:59.585158+00:00",
-                    "joinedAt": "2025-07-17T19:47:03.130115+00:00",
+                    "requestedAt": "2025-07-17T19:46:31.115814+00:00",
+                    "joinedAt": "2025-07-17T19:46:33.468991+00:00",
                     "completed": false,
                     "sessionTitle": "",
                     "activityType": "desk",

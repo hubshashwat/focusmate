@@ -69,7 +69,10 @@
             "Kevin",
             "Lori",
             "Alissa",
-            "Crystal"
+            "Crystal",
+            "Katie",
+            "Jennifer",
+            "Zuni"
         ]
     },
     {
@@ -92,7 +95,8 @@
         "lon": 12.4829321,
         "people": [
             "Pilar",
-            "Thaís"
+            "Thaís",
+            "Riccardo"
         ]
     },
     {
@@ -233,7 +237,8 @@
             "Heidi",
             "Rachel",
             "Carolina",
-            "Diane"
+            "Diane",
+            "Rosie"
         ]
     },
     {
@@ -316,7 +321,9 @@
         "people": [
             "Victoria",
             "Kaleb",
-            "Isa"
+            "Isa",
+            "Jenn",
+            "Jwan"
         ]
     },
     {
@@ -556,7 +563,8 @@
         "lat": 33.5945144,
         "lon": -7.6200284,
         "people": [
-            "Khulud🍉"
+            "Khulud🍉",
+            "Lucy"
         ]
     },
     {
@@ -575,6 +583,15 @@
         "lon": -99.1514678,
         "people": [
             "Tania"
+        ]
+    },
+    {
+        "name": "Tallinn",
+        "tz": "Europe/Tallinn",
+        "lat": 59.4372419,
+        "lon": 24.7572802,
+        "people": [
+            "Alisa"
         ]
     }
 ]

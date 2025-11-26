@@ -82,9 +82,7 @@ def main():
         response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
 
         # --- ADD THESE 3 LINES ---
-        print("Saving raw session data to focusmate_data.json...")
         raw_data = response.json()
-        save_data('focusmate_data.json', raw_data)
         # -------------------------
 
         sessions = raw_data.get('sessions', [])

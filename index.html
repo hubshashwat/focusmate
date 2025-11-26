@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focusmate Connections: 3D Globe</title>
+    <title>Shashwat's Connections: 3D Globe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -14,9 +14,8 @@
             font-family: 'Roboto Mono', monospace;
             margin: 0;
             overflow: hidden; /* Prevent scrollbars */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            width: 100vw;
+            height: 100vh;
         }
 
         header {
@@ -26,10 +25,11 @@
             z-index: 10;
             text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
             border: 1px solid rgba(0, 240, 255, 0.3);
-            padding: 10px 20px;
+            padding: 15px 20px;
             background-color: rgba(0, 25, 35, 0.5);
             backdrop-filter: blur(5px);
             border-radius: 8px;
+            pointer-events: none; /* Let clicks pass through to globe */
         }
 
         h1 {
@@ -45,54 +45,20 @@
             font-weight: 300;
         }
 
-        /* --- VIEW SWITCHER NAVIGATION --- */
-        #view-switcher {
-            margin-top: 15px;
-            border-top: 1px solid rgba(0, 240, 255, 0.3);
-            padding-top: 10px;
-        }
-        #view-switcher button {
-            font-family: 'Roboto Mono', monospace;
-            background: none;
-            border: 1px solid rgba(0, 240, 255, 0.5);
-            color: #a0e0ff;
-            padding: 8px 15px;
-            margin-right: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 0.9rem;
-        }
-        #view-switcher button:hover {
-            background-color: rgba(0, 240, 255, 0.2);
-            color: #fff;
-        }
-        #view-switcher button.active {
-            background-color: #00f0ff;
-            color: #000;
-            text-shadow: none;
-            box-shadow: 0 0 10px #00f0ff;
-        }
-
-        /* --- VIEW CONTAINER LOGIC (THE HIDE/SHOW) --- */
-        .view-container {
-            /* Hide all views by default */
-            display: none;
-            width: 100vw;
-            height: 100vh;
-        }
-        .view-container.active {
-            /* Show only the active view */
+        /* --- GLOBE CONTAINER --- */
+        #globe-view {
+            width: 100%;
+            height: 100%;
             display: block;
         }
 
-        /* Make canvas fill its container, not the whole body */
         #globe-canvas {
             display: block;
             width: 100%;
             height: 100%;
         }
 
+        /* --- TOOLTIP --- */
         #tooltip {
             position: fixed;
             display: none;
@@ -121,88 +87,8 @@
             border-top: 1px solid rgba(0, 240, 255, 0.2);
             font-size: 0.8rem;
             color: #a0e0ff;
-            max-width: 200px; /* Prevent tooltip from becoming too wide */
+            max-width: 200px;
             white-space: normal;
-        }
-
-        /* --- STATS PANEL --- */
-        #stats-view {
-            /* We'll center the stats panel */
-            display: none; /* Gets overridden by .active */
-            justify-content: center;
-            align-items: center;
-            overflow-y: auto; /* In case stats are too long */
-        }
-        #stats-view.active {
-            /* This overrides the .active rule above */
-            display: flex;
-        }
-
-        #stats-panel {
-            position: relative; /* No longer 'fixed' */
-            bottom: auto;
-            left: auto;
-            z-index: 10;
-            border: 1px solid rgba(0, 240, 255, 0.3);
-            padding: 15px 25px;
-            background-color: rgba(0, 25, 35, 0.5);
-            backdrop-filter: blur(5px);
-            border-radius: 8px;
-            width: 280px;
-            font-size: 0.9rem;
-            color: #a0e0ff;
-            max-width: 400px; /* Give it a max width */
-            margin: 40px;
-        }
-        #stats-panel h3 {
-            color: #00f0ff;
-            text-shadow: 0 0 5px #00f0ff;
-            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
-            padding-bottom: 8px;
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-weight: 400;
-        }
-        #stats-panel h4 {
-            color: #a0e0ff;
-            margin-top: 20px;
-            margin-bottom: 8px;
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-        .stat-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 10px;
-            border-bottom: 1px solid rgba(0, 240, 255, 0.1);
-            padding-bottom: 10px;
-        }
-        .stat-item span {
-            font-size: 1.75rem;
-            color: #ffffff;
-            font-weight: 400;
-        }
-        .stat-item label {
-            font-size: 0.9rem;
-            color: #a0e0ff;
-            font-weight: 300;
-        }
-        #stats-panel ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-            font-size: 0.85rem;
-        }
-        #stats-panel li {
-            display: flex;
-            justify-content: space-between;
-            padding: 4px 0;
-        }
-        #stats-panel li strong {
-            color: #fff;
-            font-weight: 400;
         }
 
         /* --- GitHub Corner --- */
@@ -221,7 +107,7 @@
             right: 5px;
             font-size: 12px;
             text-align: center;
-            z-index: 10; /* Ensure it's on top */
+            z-index: 10;
         }
         .get-yours-link a {
             color: #00f0ff;
@@ -244,49 +130,23 @@
         @media (max-width: 500px) {
             .github-corner:hover .octo-arm { animation: none; }
             .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
-            
+
             header {
-                top: 115px;      /* Move header below the ribbon */
-                left: 50%;       /* Center the header horizontally */
-                transform: translateX(-50%); /* Fine-tune the centering */
-                width: 90%;      /* Give it a nice width */
-                text-align: center; /* Center the text inside */
-            }
-
-            /* --- THIS IS THE MAIN FIX --- */
-            /* * On mobile, the header is fixed. We need to push the *content*
-             * of the active view down so it doesn't appear under the header.
-             * 230px should be enough (115px for ribbon + header height)
-            */
-            .view-container.active {
-                padding-top: 230px; 
-                box-sizing: border-box; /* Makes height (100vh) include padding */
-            }
-            /* --------------------------- */
-
-            /* Tweak stats panel to use the container's padding */
-            #stats-panel {
                 top: auto;
-                margin-top: 0; /* Container now provides the top padding */
-                margin-bottom: 40px;
-                width: 90%;
-                box-sizing: border-box;
-            }
-
-            /* Make the stats view align its content to the top */
-            #stats-view.active {
-                align-items: flex-start; 
+                bottom: 30px; /* Move header to bottom on mobile */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                text-align: center;
             }
         }
 
         /* --- UNSUPPORTED DEVICE MESSAGE --- */
         #unsupported-message {
-            /* Hide by default on desktop */
-            display: none; 
+            display: none;
         }
 
         @media (max-width: 768px) {
-            /* 1. Show the message container */
             #unsupported-message {
                 display: flex;
                 align-items: center;
@@ -321,28 +181,24 @@
                 color: #fff;
                 font-size: 0.9rem;
             }
-            
-            /* 2. Hide everything else */
+
             header,
             .github-corner,
             .get-yours-link,
-            #globe-view,
-            #stats-view {
+            #globe-view {
                 display: none !important;
             }
         }
     </style>
 </head>
 <body>
-    <body>
     <div id="unsupported-message">
         <div class="message-box">
-            <h1>Focusmate Connections</h1>
+            <h1>Shashwat's Connections</h1>
             <p>This visualization is best experienced on a larger screen.</p>
             <strong>Please visit on a tablet or desktop computer.</strong>
         </div>
     </div>
-    
 
     <a href="https://github.com/hubshashwat/focusmate" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#00f0ff; color:#000000; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 L150.0,135.0 C156.3,129.2 161.4,125.5 164.8,128.7 C168.2,131.9 170.9,138.1 170.9,138.1 C177.1,147.1 175.9,155.0 175.9,155.0 C175.9,155.0 172.9,159.5 167.8,160.0 C163.2,160.4 158.0,158.1 155.8,155.8 C153.7,153.7 150.9,149.6 150.9,149.6 C150.9,149.6 148.2,142.2 142.2,142.2" fill="currentColor" class="octo-body"></path></svg></a>
 
@@ -351,48 +207,14 @@
     </div>
 
     <header>
-        <h1>Focusmate Connections</h1>
+        <h1>Shashwat's Connections</h1>
         <p>Live Timezone Dashboard</p>
-
-        <nav id="view-switcher">
-            <button id="btn-globe" class="active">Globe</button>
-            <button id="btn-stats">Stats</button>
-        </nav>
     </header>
 
-    <div id="globe-view" class="view-container active">
+    <div id="globe-view">
         <canvas id="globe-canvas"></canvas>
         <div id="tooltip"></div>
     </div>
-
-    <div id="stats-view" class="view-container">
-        <div id="stats-panel">
-            <h3>Your Focus Stats</h3>
-            <div class="stat-item">
-                <span id="stat-hours">--</span>
-                <label>Hours Focused</label>
-            </div>
-            <div class="stat-item">
-                <span id="stat-partners">--</span>
-                <label>Unique Partners</label>
-            </div>
-            <div class="stat-item">
-                <span id="stat-favorites">--</span>
-                <label>Sessions w/ Fav</label>
-            </div>
-
-            <h4>Durations</h4>
-            <ul id="stat-durations">
-                <li>Loading...</li>
-            </ul>
-
-            <h4>Activities</h4>
-            <ul id="stat-activities">
-                <li>Loading...</li>
-            </ul>
-        </div>
-    </div>
-
 
     <script type="importmap">
         {
@@ -417,8 +239,7 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         camera.position.z = 15;
-        let targetCameraZ = camera.position.z; // track zoom target
-
+        let targetCameraZ = camera.position.z;
 
         // --- GLOBE ---
         const GLOBE_RADIUS = 10;
@@ -498,7 +319,6 @@
                     mapContext.fillText(continent.name, x, y);
                 });
 
-
                 const mapGeometry = new THREE.SphereGeometry(GLOBE_RADIUS + 0.01, 64, 64);
                 const mapTexture = new THREE.CanvasTexture(mapCanvas);
                 const mapMaterial = new THREE.MeshBasicMaterial({ map: mapTexture, transparent: true, opacity: 0.7 });
@@ -522,10 +342,8 @@
             });
         }
 
-        // --- NEW: Fetch ALL data (locations and stats) ---
-
         // Fetch location data for the globe
-        fetch('https://raw.githubusercontent.com/hubshashwat/focusmate/refs/heads/master/location.json') // Fetches from the same root directory
+        fetch('https://raw.githubusercontent.com/hubshashwat/focusmate/refs/heads/master/location.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error loading location.json! status: ${response.status}`);
@@ -537,47 +355,7 @@
             })
             .catch(error => {
                 console.error("Could not load locations data:", error);
-                // Maybe show an error on the globe itself?
             });
-
-        // Fetch stats data for the panel
-        fetch('https://raw.githubusercontent.com/hubshashwat/focusmate/refs/heads/master/stats.json') // Fetches from the same root directory
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error loading stats.json! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(stats => {
-                // 1. Populate big numbers
-                document.getElementById('stat-hours').textContent = stats.hoursFocused;
-                document.getElementById('stat-partners').textContent = stats.uniquePartners;
-                document.getElementById('stat-favorites').textContent = stats.sessionsWithFavorites;
-
-                // 2. Populate Durations List
-                const durationList = document.getElementById('stat-durations');
-                durationList.innerHTML = ''; // Clear "Loading..."
-                stats.sessionDurations.forEach(item => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${item.duration}</span> <strong>${item.count} sessions</strong>`;
-                    durationList.appendChild(li);
-                });
-
-                // 3. Populate Activity List
-                const activityList = document.getElementById('stat-activities');
-                activityList.innerHTML = ''; // Clear "Loading..."
-                stats.activityTypes.forEach(item => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${item.type}</span> <strong>${item.count} sessions</strong>`;
-                    activityList.appendChild(li);
-                });
-            })
-            .catch(error => {
-                console.error("Could not load stats data from stats.json:", error);
-                const statsPanel = document.getElementById('stats-panel');
-                statsPanel.innerHTML = "<h3>Stats Error</h3><p>Could not load stats.json. Run the Python script and push the file to GitHub.</p>";
-            });
-
 
         // --- INTERACTIVITY AND CONTROLS ---
         const controls = new OrbitControls(camera, renderer.domElement);
@@ -645,8 +423,6 @@
             }
         }
 
-
-
         // --- EVENT LISTENERS ---
         function onWindowResize() {
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -654,8 +430,6 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
             updateTargetCameraDistance();
         }
-
-
 
         function onMouseMove(event) {
             mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -705,7 +479,6 @@
             const intersects = raycaster.intersectObjects(markers.children);
 
             if (intersects.length > 0) {
-                // If we tapped a marker, show its tooltip
                 hoveredMarker = intersects[0].object;
                 const loc = hoveredMarker.userData;
 
@@ -727,51 +500,12 @@
                 tooltip.style.left = `${touch.clientX}px`;
                 tooltip.style.top = `${touch.clientY}px`;
             } else {
-                // If we tapped the background, hide the tooltip
                 hoveredMarker = null;
                 tooltip.style.display = 'none';
             }
         }
 
-
-        function onTouchEnd() {
-            // optional: hide tooltip when user lifts finger
-            // comment this out if you want tooltip to stay until next tap
-            // tooltip.style.display = 'none';
-        }
-
-        // Attach a single, reliable touch handler
         window.addEventListener('touchstart', onTouchTap, { passive: true });
-
-        // --- NEW: VIEW SWITCHER LOGIC ---
-        const btnGlobe = document.getElementById('btn-globe');
-        const btnStats = document.getElementById('btn-stats');
-        const globeView = document.getElementById('globe-view');
-        const statsView = document.getElementById('stats-view');
-
-        btnGlobe.addEventListener('click', () => {
-            // Set button state
-            btnGlobe.classList.add('active');
-            btnStats.classList.remove('active');
-
-            // Show globe, hide stats
-            globeView.classList.add('active');
-            statsView.classList.remove('active');
-
-            // This is important: tell the globe to resize
-            onWindowResize();
-        });
-
-        btnStats.addEventListener('click', () => {
-            // Set button state
-            btnStats.classList.add('active');
-            btnGlobe.classList.remove('active');
-
-            // Show stats, hide globe
-            statsView.classList.add('active');
-            globeView.classList.remove('active');
-        });
-
 
         animate();
     </script>

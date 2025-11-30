@@ -22,7 +22,9 @@
             "Jessie",
             "Elle",
             "Ebaad",
-            "Alexis"
+            "Alexis",
+            "Alice",
+            "Maggie"
         ]
     },
     {
@@ -72,7 +74,8 @@
             "Crystal",
             "Katie",
             "Jennifer",
-            "Zuni"
+            "Zuni",
+            "Jolene"
         ]
     },
     {
@@ -85,7 +88,8 @@
             "Caitlyn",
             "Julia-",
             "Ashley",
-            "Elizabeth"
+            "Elizabeth",
+            "Julianna"
         ]
     },
     {
@@ -145,7 +149,12 @@
             "Himal",
             "Vaishu",
             "Saloni",
-            "Archi"
+            "Archi",
+            "Vandita",
+            "May",
+            "Samarth",
+            "Arpit",
+            "Manjira"
         ]
     },
     {
@@ -175,7 +184,8 @@
             "Kinga",
             "Amina",
             "Tina",
-            "Nicola"
+            "Nicola",
+            "Clarissa"
         ]
     },
     {
@@ -238,7 +248,9 @@
             "Rachel",
             "Carolina",
             "Diane",
-            "Rosie"
+            "Rosie",
+            "hana",
+            "Ros"
         ]
     },
     {
@@ -261,7 +273,11 @@
             "Danielle",
             "Cendrine",
             "Vignesh",
-            "Elena"
+            "Elena",
+            "Mira",
+            "Ursula",
+            "Julia",
+            "Lucy"
         ]
     },
     {
@@ -479,7 +495,8 @@
         "people": [
             "Cate",
             "Kim",
-            "Larissa"
+            "Larissa",
+            "Soleo"
         ]
     },
     {
@@ -524,7 +541,8 @@
         "lat": 55.625578,
         "lon": 37.6063916,
         "people": [
-            "Vladislav"
+            "Vladislav",
+            "Asya"
         ]
     },
     {
@@ -554,7 +572,8 @@
         "lat": 23.7643863,
         "lon": 90.3890144,
         "people": [
-            "Salman"
+            "Salman",
+            "Zohur"
         ]
     },
     {
@@ -592,6 +611,42 @@
         "lon": 24.7572802,
         "people": [
             "Alisa"
+        ]
+    },
+    {
+        "name": "Mountain",
+        "tz": "Canada/Mountain",
+        "lat": 48.6843951,
+        "lon": -97.8652374,
+        "people": [
+            "Suzanne"
+        ]
+    },
+    {
+        "name": "Zurich",
+        "tz": "Europe/Zurich",
+        "lat": 47.3744489,
+        "lon": 8.5410422,
+        "people": [
+            "Ramon"
+        ]
+    },
+    {
+        "name": "Central",
+        "tz": "Canada/Central",
+        "lat": 14.6446934,
+        "lon": 121.0504257,
+        "people": [
+            "Precious"
+        ]
+    },
+    {
+        "name": "Copenhagen",
+        "tz": "Europe/Copenhagen",
+        "lat": 55.6867243,
+        "lon": 12.5700724,
+        "people": [
+            "Eiko"
         ]
     }
 ]

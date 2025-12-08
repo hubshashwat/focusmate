@@ -637,8 +637,8 @@
     {
         "name": "Mountain",
         "tz": "Canada/Mountain",
-        "lat": 48.6843951,
-        "lon": -97.8652374,
+        "lat": 53.5461,
+        "lon": -113.4938,
         "people": [
             "Suzanne"
         ]
@@ -655,8 +655,8 @@
     {
         "name": "Central",
         "tz": "Canada/Central",
-        "lat": 14.6446934,
-        "lon": 121.0504257,
+        "lat": 49.8951,
+        "lon": -97.1384,
         "people": [
             "Precious"
         ]
@@ -683,8 +683,8 @@
     {
         "name": "Eastern",
         "tz": "US/Eastern",
-        "lat": 7.7596435,
-        "lon": 81.5850205,
+        "lat": 40.7128,
+        "lon": -74.0060,
         "people": [
             "Kenneth",
             "Julia"
@@ -693,8 +693,8 @@
     {
         "name": "Mountain",
         "tz": "US/Mountain",
-        "lat": 48.6843951,
-        "lon": -97.8652374,
+        "lat": 39.7392,
+        "lon": -104.9903,
         "people": [
             "Jamielynn"
         ]

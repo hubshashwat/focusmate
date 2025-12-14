@@ -82,7 +82,9 @@
             "Heather",
             "Caroline",
             "Zay",
-            "Rosemary"
+            "Rosemary",
+            "Kassandra",
+            "Mihal"
         ]
     },
     {
@@ -162,7 +164,9 @@
             "May",
             "Samarth",
             "Arpit",
-            "Manjira"
+            "Manjira",
+            "Gowri",
+            "Snehal"
         ]
     },
     {
@@ -264,7 +268,11 @@
             "Rosie",
             "hana",
             "Ros",
-            "Elaine"
+            "Elaine",
+            "Rebecca",
+            "Kim",
+            "Masha",
+            "Amanda"
         ]
     },
     {
@@ -684,7 +692,7 @@
         "name": "Eastern",
         "tz": "US/Eastern",
         "lat": 40.7128,
-        "lon": -74.0060,
+        "lon": -74.006,
         "people": [
             "Kenneth",
             "Julia"

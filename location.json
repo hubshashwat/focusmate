@@ -28,7 +28,8 @@
             "Kim",
             "Megan",
             "Jeanette",
-            "Hain"
+            "Hain",
+            "Alma"
         ]
     },
     {
@@ -204,7 +205,9 @@
             "Clarissa",
             "Philip",
             "Bailey",
-            "Natalie"
+            "Natalie",
+            "Sammy",
+            "Betty"
         ]
     },
     {
@@ -663,7 +666,8 @@
         "lat": 47.3744489,
         "lon": 8.5410422,
         "people": [
-            "Ramon"
+            "Ramon",
+            "Diana"
         ]
     },
     {
@@ -730,6 +734,33 @@
         "lon": -58.3887904,
         "people": [
             "Sergey"
+        ]
+    },
+    {
+        "name": "Karachi",
+        "tz": "Asia/Karachi",
+        "lat": 24.8546842,
+        "lon": 67.0207055,
+        "people": [
+            "anna"
+        ]
+    },
+    {
+        "name": "Montevideo",
+        "tz": "America/Montevideo",
+        "lat": -34.9058916,
+        "lon": -56.1913095,
+        "people": [
+            "Melissa"
+        ]
+    },
+    {
+        "name": "Lagos",
+        "tz": "Africa/Lagos",
+        "lat": 6.4550575,
+        "lon": 3.3941795,
+        "people": [
+            "Jane"
         ]
     }
 ]

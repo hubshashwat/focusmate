@@ -787,5 +787,32 @@
         "people": [
             "Setareh"
         ]
+    },
+    {
+        "name": "Brisbane",
+        "tz": "Australia/Brisbane",
+        "lat": -27.4689623,
+        "lon": 153.0235009,
+        "people": [
+            "Wendy"
+        ]
+    },
+    {
+        "name": "Tbilisi",
+        "tz": "Asia/Tbilisi",
+        "lat": 41.6934591,
+        "lon": 44.8014495,
+        "people": [
+            "Alyona"
+        ]
+    },
+    {
+        "name": "Melbourne",
+        "tz": "Australia/Melbourne",
+        "lat": -37.8142454,
+        "lon": 144.9631732,
+        "people": [
+            "Xinyi"
+        ]
     }
 ]

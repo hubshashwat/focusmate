@@ -89,7 +89,8 @@
             "Rosemary",
             "Kassandra",
             "Mihal",
-            "Nina"
+            "Nina",
+            "Gail"
         ]
     },
     {
@@ -813,6 +814,15 @@
         "lon": 144.9631732,
         "people": [
             "Xinyi"
+        ]
+    },
+    {
+        "name": "Recife",
+        "tz": "America/Recife",
+        "lat": -8.0584933,
+        "lon": -34.8848193,
+        "people": [
+            "Salatiele"
         ]
     }
 ]

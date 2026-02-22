@@ -93,7 +93,8 @@
             "Nina",
             "Gail",
             "Shyron",
-            "Heidi"
+            "Heidi",
+            "Shilpa"
         ]
     },
     {
@@ -325,7 +326,8 @@
             "Sanja",
             "Georg",
             "Jojoo",
-            "Mackenzie"
+            "Mackenzie",
+            "Boris"
         ]
     },
     {
@@ -345,7 +347,8 @@
         "lon": 16.3725042,
         "people": [
             "Tobias",
-            "Jaunius"
+            "Jaunius",
+            "Sofie"
         ]
     },
     {
@@ -844,6 +847,33 @@
         "lon": -155.4283701,
         "people": [
             "Bethany"
+        ]
+    },
+    {
+        "name": "Tokyo",
+        "tz": "Asia/Tokyo",
+        "lat": 35.6768601,
+        "lon": 139.7638947,
+        "people": [
+            "Kentaro"
+        ]
+    },
+    {
+        "name": "Warsaw",
+        "tz": "Europe/Warsaw",
+        "lat": 52.2333742,
+        "lon": 21.0711489,
+        "people": [
+            "Andrew"
+        ]
+    },
+    {
+        "name": "Alaska",
+        "tz": "US/Alaska",
+        "lat": 64.4459613,
+        "lon": -149.680909,
+        "people": [
+            "☃️"
         ]
     }
 ]

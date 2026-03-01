@@ -31,7 +31,8 @@
             "Hain",
             "Alma",
             "Manu",
-            "Mirie"
+            "Mirie",
+            "Athena"
         ]
     },
     {
@@ -219,7 +220,8 @@
             "Bailey",
             "Natalie",
             "Sammy",
-            "Betty"
+            "Betty",
+            "Jessi"
         ]
     },
     {
@@ -874,6 +876,15 @@
         "lon": -149.680909,
         "people": [
             "☃️"
+        ]
+    },
+    {
+        "name": "Arizona",
+        "tz": "US/Arizona",
+        "lat": 34.395342,
+        "lon": -111.763275,
+        "people": [
+            "Beth"
         ]
     }
 ]

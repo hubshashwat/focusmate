@@ -222,7 +222,8 @@
             "Natalie",
             "Sammy",
             "Betty",
-            "Jessi"
+            "Jessi",
+            "shreya"
         ]
     },
     {
@@ -701,7 +702,8 @@
             "Ramon",
             "Diana",
             "Hubert",
-            "Cat"
+            "Cat",
+            "Anja"
         ]
     },
     {
@@ -795,7 +797,8 @@
         "lat": 6.4550575,
         "lon": 3.3941795,
         "people": [
-            "Jane"
+            "Jane",
+            "Hannah"
         ]
     },
     {
@@ -887,6 +890,24 @@
         "lon": -111.763275,
         "people": [
             "Beth"
+        ]
+    },
+    {
+        "name": "Zagreb",
+        "tz": "Europe/Zagreb",
+        "lat": 45.8130967,
+        "lon": 15.9772795,
+        "people": [
+            "Kristina"
+        ]
+    },
+    {
+        "name": "Kyiv",
+        "tz": "Europe/Kyiv",
+        "lat": 50.4500336,
+        "lon": 30.5241361,
+        "people": [
+            "Daria"
         ]
     }
 ]

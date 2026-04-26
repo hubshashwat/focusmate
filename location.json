@@ -99,7 +99,9 @@
             "Shilpa",
             "Jordyn",
             "Anna",
-            "Iris"
+            "Iris",
+            "Kathryn",
+            "Tracey"
         ]
     },
     {
@@ -307,7 +309,9 @@
             "Amy",
             "Siân",
             "Inés",
-            "Kate"
+            "Kate",
+            "Emma",
+            "Mairead"
         ]
     },
     {
@@ -941,6 +945,15 @@
         "lon": 106.7021047,
         "people": [
             "An"
+        ]
+    },
+    {
+        "name": "Pacific",
+        "tz": "Canada/Pacific",
+        "lat": 46.5334929,
+        "lon": -123.768029,
+        "people": [
+            "Kristi"
         ]
     }
 ]

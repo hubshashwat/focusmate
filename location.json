@@ -33,7 +33,8 @@
             "Manu",
             "Mirie",
             "Athena",
-            "Buck"
+            "Buck",
+            "Rachel"
         ]
     },
     {
@@ -107,7 +108,9 @@
             "Karin",
             "Lana",
             "Megan",
-            "Vanessa"
+            "Vanessa",
+            "Julie",
+            "Dina"
         ]
     },
     {
@@ -324,7 +327,8 @@
             "Kate",
             "Emma",
             "Mairead",
-            "Mitzi"
+            "Mitzi",
+            "Libby"
         ]
     },
     {
@@ -415,7 +419,8 @@
         "lon": 126.9782914,
         "people": [
             "Irene",
-            "Alex"
+            "Alex",
+            "Yebin"
         ]
     },
     {
@@ -524,7 +529,8 @@
             "Andrea",
             "Maria-Jose",
             "Sofía",
-            "nu"
+            "nu",
+            "M."
         ]
     },
     {
@@ -616,7 +622,8 @@
             "Ellie",
             "Julia",
             "Marie",
-            "Yolanda"
+            "Yolanda",
+            "Kyra"
         ]
     },
     {
@@ -913,7 +920,9 @@
         "lat": 35.6768601,
         "lon": 139.7638947,
         "people": [
-            "Kentaro"
+            "Kentaro",
+            "Ayumi",
+            "yuka"
         ]
     },
     {
@@ -986,6 +995,16 @@
         "lon": -123.768029,
         "people": [
             "Kristi"
+        ]
+    },
+    {
+        "name": "Singapore",
+        "tz": "Asia/Singapore",
+        "lat": 1.357107,
+        "lon": 103.8194992,
+        "people": [
+            "Dave",
+            "Amanda"
         ]
     }
 ]

@@ -34,7 +34,8 @@
             "Mirie",
             "Athena",
             "Buck",
-            "Rachel"
+            "Rachel",
+            "Nancy"
         ]
     },
     {
@@ -200,7 +201,8 @@
             "Shivani",
             "Manas",
             "SouMya",
-            "Prachi"
+            "Prachi",
+            "Suhani"
         ]
     },
     {
@@ -267,7 +269,8 @@
         "lat": 42.3315509,
         "lon": -83.0466403,
         "people": [
-            "Cory"
+            "Cory",
+            "Akanksha"
         ]
     },
     {
@@ -328,7 +331,11 @@
             "Emma",
             "Mairead",
             "Mitzi",
-            "Libby"
+            "Libby",
+            "Jialei/佳蕾",
+            "marianne",
+            "Jin",
+            "Jules"
         ]
     },
     {
@@ -375,7 +382,8 @@
         "lon": 121.5636796,
         "people": [
             "Hugo",
-            "Tom"
+            "Tom",
+            "Gina"
         ]
     },
     {
@@ -504,7 +512,8 @@
         "lon": 4.351697,
         "people": [
             "Sylvia",
-            "Marijke"
+            "Marijke",
+            "Audrey"
         ]
     },
     {
@@ -596,7 +605,8 @@
         "lat": 33.4484367,
         "lon": -112.074141,
         "people": [
-            "Cassandra"
+            "Cassandra",
+            "Rebecca"
         ]
     },
     {
@@ -623,7 +633,8 @@
             "Julia",
             "Marie",
             "Yolanda",
-            "Kyra"
+            "Kyra",
+            "arjeta"
         ]
     },
     {
@@ -825,7 +836,8 @@
         "lat": -34.6095579,
         "lon": -58.3887904,
         "people": [
-            "Sergey"
+            "Sergey",
+            "Cinthia"
         ]
     },
     {
@@ -976,7 +988,8 @@
         "lat": -34.9281805,
         "lon": 138.5999312,
         "people": [
-            "Felicia"
+            "Felicia",
+            "Jo"
         ]
     },
     {
@@ -1005,6 +1018,33 @@
         "people": [
             "Dave",
             "Amanda"
+        ]
+    },
+    {
+        "name": "Budapest",
+        "tz": "Europe/Budapest",
+        "lat": 47.4978789,
+        "lon": 19.0402383,
+        "people": [
+            "Nikita"
+        ]
+    },
+    {
+        "name": "Istanbul",
+        "tz": "Europe/Istanbul",
+        "lat": 41.006381,
+        "lon": 28.9758715,
+        "people": [
+            "bilge"
+        ]
+    },
+    {
+        "name": "Sarajevo",
+        "tz": "Europe/Sarajevo",
+        "lat": 43.8570713,
+        "lon": 18.4126147,
+        "people": [
+            "Samra"
         ]
     }
 ]

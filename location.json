@@ -111,7 +111,10 @@
             "Megan",
             "Vanessa",
             "Julie",
-            "Dina"
+            "Dina",
+            "Donna",
+            "Eve",
+            "Rosy"
         ]
     },
     {
@@ -126,7 +129,8 @@
             "Ashley",
             "Elizabeth",
             "Julianna",
-            "Ruth"
+            "Ruth",
+            "Sun"
         ]
     },
     {
@@ -148,7 +152,8 @@
         "people": [
             "Kiran",
             "Verna💗",
-            "Shaneal"
+            "Shaneal",
+            "Ann"
         ]
     },
     {
@@ -202,7 +207,8 @@
             "Manas",
             "SouMya",
             "Prachi",
-            "Suhani"
+            "Suhani",
+            "Jaya"
         ]
     },
     {
@@ -335,7 +341,8 @@
             "Jialei/佳蕾",
             "marianne",
             "Jin",
-            "Jules"
+            "Jules",
+            "Dean"
         ]
     },
     {
@@ -372,7 +379,9 @@
             "Mary",
             "Alexander",
             "Işıl",
-            "Avital-ask"
+            "Avital-ask",
+            "Nicole",
+            "Anne"
         ]
     },
     {
@@ -397,7 +406,8 @@
             "Sofie",
             "Benjamin",
             "Stuart",
-            "Klara"
+            "Klara",
+            "Angelika"
         ]
     },
     {
@@ -620,7 +630,8 @@
             "Larissa",
             "Soleo",
             "Jodi",
-            "Willamarie"
+            "Willamarie",
+            "Angela"
         ]
     },
     {
@@ -1045,6 +1056,24 @@
         "lon": 18.4126147,
         "people": [
             "Samra"
+        ]
+    },
+    {
+        "name": "Bucharest",
+        "tz": "Europe/Bucharest",
+        "lat": 44.4361414,
+        "lon": 26.102684,
+        "people": [
+            "Kayla"
+        ]
+    },
+    {
+        "name": "Belgrade",
+        "tz": "Europe/Belgrade",
+        "lat": 44.8153318,
+        "lon": 20.4456588,
+        "people": [
+            "Shay"
         ]
     }
 ]

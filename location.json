@@ -213,7 +213,8 @@
             "Prachi",
             "Suhani",
             "Jaya",
-            "Divia"
+            "Divia",
+            "Mrunal"
         ]
     },
     {
@@ -570,7 +571,8 @@
         "lat": 59.9133301,
         "lon": 10.7389701,
         "people": [
-            "Gurinder"
+            "Gurinder",
+            "Jennifer"
         ]
     },
     {
@@ -1091,6 +1093,15 @@
         "lon": 20.4456588,
         "people": [
             "Shay"
+        ]
+    },
+    {
+        "name": "Kuala Lumpur",
+        "tz": "Asia/Kuala_Lumpur",
+        "lat": 3.1516964,
+        "lon": 101.6942371,
+        "people": [
+            "Sim"
         ]
     }
 ]

@@ -118,7 +118,12 @@
             "Donna",
             "Eve",
             "Rosy",
-            "Sadé"
+            "Sadé",
+            "Madison",
+            "Lindsey",
+            "Abigail",
+            "Walker",
+            "Amanda"
         ]
     },
     {
@@ -135,7 +140,8 @@
             "Julianna",
             "Ruth",
             "Sun",
-            "Yasmeen"
+            "Yasmeen",
+            "Karen"
         ]
     },
     {
@@ -235,7 +241,8 @@
             "Sofia",
             "Cindy",
             "Kaye",
-            "Sara"
+            "Sara",
+            "Peta"
         ]
     },
     {
@@ -616,7 +623,8 @@
             "Yuliya",
             "soukaina",
             "Adnane",
-            "Ivan"
+            "Ivan",
+            "Dani"
         ]
     },
     {
@@ -667,7 +675,9 @@
             "Willamarie",
             "Angela",
             "Ayesha",
-            "Aubri"
+            "Aubri",
+            "Emily",
+            "Hailey"
         ]
     },
     {
@@ -1135,6 +1145,33 @@
         "lon": -56.6403402,
         "people": [
             "Margarita"
+        ]
+    },
+    {
+        "name": "Queensland",
+        "tz": "Australia/Queensland",
+        "lat": -22.1646782,
+        "lon": 144.5844903,
+        "people": [
+            "Libby"
+        ]
+    },
+    {
+        "name": "Bogota",
+        "tz": "America/Bogota",
+        "lat": 4.6533817,
+        "lon": -74.0836331,
+        "people": [
+            "Paul"
+        ]
+    },
+    {
+        "name": "Windhoek",
+        "tz": "Africa/Windhoek",
+        "lat": -22.5776104,
+        "lon": 17.0772739,
+        "people": [
+            "Mischa"
         ]
     }
 ]

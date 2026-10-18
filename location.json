@@ -39,7 +39,9 @@
             "Lila",
             "Tessa",
             "Almira",
-            "Heather"
+            "Heather",
+            "Pam",
+            "Jan"
         ]
     },
     {
@@ -228,7 +230,8 @@
             "Suhani",
             "Jaya",
             "Divia",
-            "Mrunal"
+            "Mrunal",
+            "Chirag"
         ]
     },
     {
@@ -279,7 +282,8 @@
             "Kita",
             "Kim",
             "Steven",
-            "Emma"
+            "Emma",
+            "Naceem"
         ]
     },
     {
@@ -381,7 +385,8 @@
             "Prabhu",
             "Michael",
             "Valery",
-            "Katie"
+            "Katie",
+            "Katarina"
         ]
     },
     {
@@ -423,7 +428,8 @@
             "Anne",
             "Jackie",
             "Joshua",
-            "Lili"
+            "Lili",
+            "Sola"
         ]
     },
     {
@@ -450,7 +456,8 @@
             "Benjamin",
             "Stuart",
             "Klara",
-            "Angelika"
+            "Angelika",
+            "Maria"
         ]
     },
     {
@@ -536,7 +543,8 @@
         "people": [
             "Linoy",
             "Kirby",
-            "Julie"
+            "Julie",
+            "Laura"
         ]
     },
     {
@@ -1015,7 +1023,8 @@
         "lat": 52.2333742,
         "lon": 21.0711489,
         "people": [
-            "Andrew"
+            "Andrew",
+            "Kasia"
         ]
     },
     {
@@ -1184,6 +1193,24 @@
         "lon": 17.0772739,
         "people": [
             "Mischa"
+        ]
+    },
+    {
+        "name": "Michigan",
+        "tz": "US/Michigan",
+        "lat": 43.6211955,
+        "lon": -84.6824346,
+        "people": [
+            "Alex"
+        ]
+    },
+    {
+        "name": "Jakarta",
+        "tz": "Asia/Jakarta",
+        "lat": -6.1754049,
+        "lon": 106.827168,
+        "people": [
+            "Ainia"
         ]
     }
 ]

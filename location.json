@@ -41,7 +41,9 @@
             "Almira",
             "Heather",
             "Pam",
-            "Jan"
+            "Jan",
+            "Frances",
+            "Carrie"
         ]
     },
     {
@@ -129,7 +131,9 @@
             "Amanda",
             "April",
             "Rebecca",
-            "janet"
+            "janet",
+            "Berenice",
+            "Nayoon"
         ]
     },
     {
@@ -250,7 +254,8 @@
             "Kaye",
             "Sara",
             "Peta",
-            "Sophia"
+            "Sophia",
+            "Nancy🍉"
         ]
     },
     {
@@ -575,7 +580,8 @@
         "people": [
             "Sylvia",
             "Marijke",
-            "Audrey"
+            "Audrey",
+            "Janina"
         ]
     },
     {
@@ -694,7 +700,8 @@
             "Aubri",
             "Emily",
             "Hailey",
-            "Laurel"
+            "Laurel",
+            "Dorna"
         ]
     },
     {
@@ -964,7 +971,8 @@
         "people": [
             "Wendy",
             "Lulu",
-            "Kirsten"
+            "Kirsten",
+            "Chelsea"
         ]
     },
     {
@@ -1100,7 +1108,8 @@
         "lon": 103.8194992,
         "people": [
             "Dave",
-            "Amanda"
+            "Amanda",
+            "Garey"
         ]
     },
     {
@@ -1118,7 +1127,8 @@
         "lat": 41.006381,
         "lon": 28.9758715,
         "people": [
-            "bilge"
+            "bilge",
+            "Sezin"
         ]
     },
     {
@@ -1211,6 +1221,24 @@
         "lon": 106.827168,
         "people": [
             "Ainia"
+        ]
+    },
+    {
+        "name": "Grand Turk",
+        "tz": "America/Grand_Turk",
+        "lat": 21.467964,
+        "lon": -71.1387218,
+        "people": [
+            "Stacey"
+        ]
+    },
+    {
+        "name": "Helsinki",
+        "tz": "Europe/Helsinki",
+        "lat": 60.1666204,
+        "lon": 24.9435408,
+        "people": [
+            "Anterpreet"
         ]
     }
 ]
